@@ -22,6 +22,10 @@
   * i-button 데이타에 대한 pre/postfix와 i-button 제거에 대한 pre/postfix 구분 기능 추가.
 
 ## lpu238
+### 2023.08.03
+* 변경 내역
+  * test case 결과 추가.
+  * [lpu238_00001.zip](./lpu238/lpu238_rom00001.zip) 는 수정없이 europa v1.0 으로 release 확정.
 ### 2023.07.27
 * 버전
   * europa v1.0
