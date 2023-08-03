@@ -1,6 +1,6 @@
 # public.lpu23x.firmware
 
-## lpu237
+## lpu237 - [history](./doc/history_lpu237.md)
 ### 2022.11.14
 * 버전
   * callisto v3.22 과  ganymede v5.21
@@ -21,7 +21,7 @@
   * i-button 제거시, 전송되는 키정의 기능 추가.
   * i-button 데이타에 대한 pre/postfix와 i-button 제거에 대한 pre/postfix 구분 기능 추가.
 
-## lpu238
+## lpu238 - [history](./doc/history_lpu238.md)
 ### 2023.08.03
 * 변경 내역
   * test case 결과 추가.
