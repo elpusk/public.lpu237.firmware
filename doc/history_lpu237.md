@@ -12,7 +12,7 @@
 ## 2022.03.18 - [ganymede version 5.19](../lpu237/old_raw/lpu237_5.19.zip)
 -  MMD1100 reset interval 를 disable(240)으로 하면, 계속 MMD1100을 reset 하는 버그 수정.
 
-## 2022.03.07 - [ganymede version 5.18](../lpu237/old_raw/lpu237_5.18.zip)
+## 2022.03.07 - ~~ganymede version 5.18 배포된적 없음.~~
 - firmware 크기를 줄이기 위해 IDE 를 LPCXpress v4.1에서 MCPXpresso v11.5로 변경.
 - 삭제 되었던 Magtek decoder 지원 코드 추가.
 - enter config commnad 에, 현재 연결된 decoder 를 detect 하는 기능 추가.( 기본값은 magtek de-coder, 연결 없으면, magtek decoder 로 인식).
@@ -20,7 +20,7 @@
 ## 2022.02.23 – [ganymede version 5.17](../lpu237/old_raw/lpu237_5.17.zip)
 - card reading direction 설정 불가 버그 수정.
 
-## 2022.02.18 – [ganymede version 5.16](../lpu237/old_raw/lpu237_5.16.zip)
+## 2022.02.18 – ~~ganymede version 5.16~~
 - 다시 적용되는 MMD1100 decoder 지원 추가.
 - Magtek decoder 지원 중단.(flash memory 부족)
 - MMD1100 decoder 먹통 해결을 위한 HW reset 기능 추가.
