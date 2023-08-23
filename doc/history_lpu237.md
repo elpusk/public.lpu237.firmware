@@ -6,27 +6,27 @@
 -	i-button 제거시, 전송되는 키정의 기능 추가.
 -	i-button 데이타에 대한 pre/postfix와 i-button 제거에 대한 pre/postfix 구분 기능 추가.
 
-## 2022.05.09 - ganymede version 5.20
+## 2022.05.09 - [ganymede version 5.20](../lpu237/old_raw/lpu237_5.20.zip)
 - M001, M003 type 에서 MMD1100을 Magtek이라고 mapper 에게 알리 주는 버그 수정.
 
-## 2022.03.18 - ganymede version 5.19
+## 2022.03.18 - [ganymede version 5.19](../lpu237/old_raw/lpu237_5.19.zip)
 -  MMD1100 reset interval 를 disable(240)으로 하면, 계속 MMD1100을 reset 하는 버그 수정.
 
-## 2022.03.07 - ganymede version 5.18
+## 2022.03.07 - [ganymede version 5.18](../lpu237/old_raw/lpu237_5.18.zip)
 - firmware 크기를 줄이기 위해 IDE 를 LPCXpress v4.1에서 MCPXpresso v11.5로 변경.
 - 삭제 되었던 Magtek decoder 지원 코드 추가.
 - enter config commnad 에, 현재 연결된 decoder 를 detect 하는 기능 추가.( 기본값은 magtek de-coder, 연결 없으면, magtek decoder 로 인식).
 
-## 2022.02.23 – ganymede version 5.17
+## 2022.02.23 – [ganymede version 5.17](../lpu237/old_raw/lpu237_5.17.zip)
 - card reading direction 설정 불가 버그 수정.
 
-## 2022.02.18 – ganymede version 5.16
+## 2022.02.18 – [ganymede version 5.16](../lpu237/old_raw/lpu237_5.16.zip)
 - 다시 적용되는 MMD1100 decoder 지원 추가.
 - Magtek decoder 지원 중단.(flash memory 부족)
 - MMD1100 decoder 먹통 해결을 위한 HW reset 기능 추가.
 - buzzer side effect 회피를 위해 buzzer on 동안 MMD1100 을 reset 시킴.
 
-## 2020.7.21 – callisto version 3.21
+## 2020.7.21 – [callisto version 3.21](../lpu237/old_raw/lpu237_3.21.zip)
 - lpu208 사용자가 통장 포맷 읽기 요청에 따라, combination 관련 부분 활성화.( callisto 는 lpu208 firmware 는 아니지만, ganymede 와 - 동일한 기능을 해야 한다는 규칙에 따라 추가 됨. )
 - 모든 트랙 중 정상적인 트랙이 존재하면, 정상 처리 표시(부저 및 LED) 선택 기능 추가.
 - ISO1,2 에 같은 데이터가 있으면, ISO2 만 보내는 옵션 추가.
@@ -38,7 +38,7 @@
 - CONF_USE_GENERAL_DEFAULT 제거
 - Util_Msr_Reset() 에 g_MsrObj[i].BaseObj.cLastError = 0 추가(  parity, error correct method 변경 가능하도록, 2 combination 에서 에러 난 후, 정상 읽기 전 까지 계속 에러 나는 것 수정.)
 
-## 2020.7.2 – ganymede version 5.15
+## 2020.7.2 – [ganymede version 5.15](../lpu237/old_raw/lpu237_5.15.zip)
 - 버그 수정
 - CONF_USE_LANGUAGE_SPANISH 제거
 - CONF_USE_EQUINSA_DEFAULT 제거
@@ -51,13 +51,13 @@
 - Util_Msr_Reset() 에 g_MsrObj[i].BaseObj.cLastError = 0 추가
 - parity, error correct method 변경 가능하도록, 2 combination 에서 에러 난 후, 정상 읽기 전 까지 계속 에러 나는 것 수정.
 
-## 2020.7.16 – ganymede version 5.14
+## 2020.7.16 – [ganymede version 5.14](../lpu237/old_raw/lpu237_5.14.zip)
 -  lpu208 사용자를 위해.
 - ISO1,2 에 같은 데이터가 있으면, ISO2 만 보내는 옵션 추가.
 - ISO3,2 에 같은 데이터가 있으면, ISO2 만 보내는 옵션 추가.
 - ETXL pattern 이 0xe0 이고, 첫 데이터가 ASCII code 로 변경 했을 때 , ':'(colon) 인 경우, 이 colon 을 전송하지 않을 옵션 추가.(우리증권 테스트 통장 관련 요청으로 )
 
-## 2020.7.15 – ganymede version 5.13
+## 2020.7.15 – [ganymede version 5.13](../lpu237/old_raw/lpu237_5.13.zip)
 - lpu208 사용자가 통장 포맷 읽기 요청에 따라, combination 관련 부분 활성화.
 - 내부 flash 크기가 부족해서 MMD1000 디코더 지원 코드 모두 제거.
 - 모든 트랙 중 정상적인 트랙이 존재하면, 정상 처리 표시(부저 및 LED) 선택 기능 추가.
@@ -65,10 +65,10 @@
 ## 2018.7.27 - 버전 관리
 * v3.18, v3.19, v3.20, v5.10, v5.11, v5.12 는 아직 필드에 배포되지 않았고, 요청 사항이 기존 v3.17, v5.9 에서 해결 할 수 있는 것으로 판명되서 폐기함. 그러나 버전 관리를 위해서 다음 버전은 v3.21, v5.13 으로 할 예정.
 
-## 2018.7.19 - ganymede version 5.12
+## 2018.7.19 - [ganymede version 5.12](../lpu237/old_raw/lpu237_5.12.zip)
 -  re.postfix 값이 04h,59h,04h,62h 이면, 현재 number lock 키가 off 이면 on 하고  04h ,00h, 04h, 59h, 04h, 00h, 04h, 62h, 04h, 00h, 00h, 00h  로 보낸 후 number lock 키 다시 off 하도록 수정.
 
-## 2018.7.19 - callisto version 3.20
+## 2018.7.19 - [callisto version 3.20](../lpu237/old_raw/lpu237_3.20.zip)
 -  re.postfix 값이 04h,59h,04h,62h 이면, 현재 number lock 키가 off 이면 on 하고  04h ,00h, 04h, 59h, 04h, 00h, 04h, 62h, 04h, 00h, 00h, 00h 로 보낸 후 number lock 키 다시 off 하도록 수정.
 
 ## 2018.7.11 - callisto version 3.19 : 내부에서 테스트용으로 만 사용. 미배포.
@@ -77,65 +77,65 @@
 ## 2018.7.11 - ganymede version 5.11 : 내부에서 테스트용으로 만 사용. 미배포.
 -  re.postfix 값이 04h,59h,04h,62h 이면, 현재 number lock 키가 on 이면 off 하고  04h,59h,04h, 00h, 04h,62h, 00h, 00h 로 보낸 후 number lock 키 다시 on 하도록 수정.
 
-## 2018.7.11 - callisto version 3.18
+## 2018.7.11 - [callisto version 3.18](../lpu237/old_raw/lpu237_3.18.zip)
 - pre.postfix 값이 04h,59h,04h,62h 이면 usb 키보드 인터페이스에서 04h,59h,00h, 00h, 04h,62h, 00h, 00h 로 보내 던 것을 04h,59h,04h, 00h, 04h,62h, 00h, 00h 로 보내도록 수정( 즉 ALT 키를 계속 누른고 있는 상태에서 키패그 1, 0 키를 눌렀다 띰 )uart 인터페이스에서는 0ah 로 대체헤서 보냄.
 
-## 2018.7.11 - ganymede version 5.10
+## 2018.7.11 - [ganymede version 5.10](../lpu237/old_raw/lpu237_5.10.zip)
 - pre.postfix 값이 04h,59h,04h,62h 이면 usb 키보드 인터페이스에서 04h,59h,00h, 00h, 04h,62h, 00h, 00h 로 보내 던 것을 04h,59h,04h, 00h, 04h,62h, 00h, 00h 로 보내도록 수정( 즉 ALT 키를 계속 누른고 있는 상태에서 키패그 1, 0 키를 눌렀다 띰 )uart 인터페이스에서는 0ah 로 대체헤서 보냄.
 
-## 2018.3.16 – callisto version 3.17
+## 2018.3.16 – [callisto version 3.17](../lpu237/old_raw/lpu237_3.17.zip)
 - i-button 접촉시, 씨리얼 번호 보내고, “out” 문자열 보내고, 제거시 “Out” 문자열 보내는 기능 추가.
 - Addmit's codestick 의 uart 프로토롤지원.
 
-## 2018.3.16 – ganymede version 5.9
+## 2018.3.16 – [ganymede version 5.9](../lpu237/old_raw/lpu237_5.9.zip)
 - i-button 접촉시, 씨리얼 번호 보내고, “out” 문자열 보내고, 제거시 “Out” 문자열 보내는 기능 추가.
 - Addmit's codestick 의 uart 프로토롤지원.
 
-## 2017.3.6 - callisto version 3.16
+## 2017.3.6 - [callisto version 3.16](../lpu237/old_raw/lpu237_3.16.zip)
 - i-button 제거 시, keyboard interface 일 때, 선택적으로 “0000000” 전송 가능하도록 기능 추가.
 
-## 2017.3.6 - ganymede version 5.8
+## 2017.3.6 - [ganymede version 5.8](../lpu237/old_raw/lpu237_5.8.zip)
 - i-button 제거 시, keyboard interface 일 때, 선택적으로 “0000000” 전송 가능하도록 기능 추가.
 
-## 2016.11.17 – callisto version 3.15
+## 2016.11.17 – [callisto version 3.15](../lpu237/old_raw/lpu237_3.15.zip)
 - 부저 기본값을 2.8KHz( 카운터 값 25000 ) 에서 3.0KHz( 카운터 값 26000 ) 으로 변경.
 - 부저 카운터 값을 25000 으로 변경하려하면, 자동으로 26000 으로 세팅 되게 함.
 
-## 2016.11.17 – ganymede version 5.7
+## 2016.11.17 – [ganymede version 5.7](../lpu237/old_raw/lpu237_5.7.zip)
 - 부저 기본값을 2.8KHz( 카운터 값 25000 ) 에서 3.0KHz( 카운터 값 26000 ) 으로 변경.
 - 부저 카운터 값을 25000 으로 변경하려하면, 자동으로 26000 으로 세팅 되게 함.
 
-## 2015.5.19 – callisto version 3.14
+## 2015.5.19 – [callisto version 3.14](../lpu237/old_raw/lpu237_3.14.zip)
 - i-button 제거 시, keyboard interface 일 때, “0000000000000000”  전송이 선택 사항으로 변경됨.
 
-## 2015.5.19 - ganymede version 5.6
+## 2015.5.19 - [ganymede version 5.6](../lpu237/old_raw/lpu237_5.6.zip)
 - i-button 제거 시, keyboard interface 일 때, “0000000000000000”  전송이 선택 사항으로 변경됨.
 
-## 2014.12.8 – callisto version 3.13
+## 2014.12.8 – [callisto version 3.13](../lpu237/old_raw/lpu237_3.13.zip)
 - i-button 제거 시, keyboard interface 일 때, 선택 적으로 F12 만 전송 할 수 있는 기능 추가.
 
-## 2014.12.8 – ganymede version 5.5
+## 2014.12.8 – [ganymede version 5.5](../lpu237/old_raw/lpu237_5.5.zip)
 - i-button 제거 시, keyboard interface 일 때, 선택 적으로 F12 만 전송 할 수 있는 기능 추가.
 
-## 2014.11.25 – callisto version 3.12
+## 2014.11.25 – [callisto version 3.12](../lpu237/old_raw/lpu237_3.12.zip)
 - i-button USB HID Vendor interface 추가.
 
-## 2014.11.25 – ganymede version 5.4
+## 2014.11.25 – [ganymede version 5.4](../lpu237/old_raw/lpu237_5.4.zip)
 - i-button USB HID Vendor interface 추가.
 
-## 2014.9.18 - callisto version 3.11
+## 2014.9.18 - [callisto version 3.11](../lpu237/old_raw/lpu237_3.11.zip)
 - Global pre/postfix 기능 추가.
 
-## 2014.9.18 - ganymede version 5.3
+## 2014.9.18 - [ganymede version 5.3](../lpu237/old_raw/lpu237_5.3.zip)
 - Global pre/postfix 기능 추가.
 
-## 2014.6.12 - ganymede version 5.2.0.0
+## 2014.6.12 - [ganymede version 5.2.0.0](../lpu237/old_raw/lpu237_5.2.zip)
 - 현재 inteface 가 usb keyboard mode 일 때, ISO2 트랙 최대 길이를 38자(STX, ETX, LRC 포함 하면 41자) 까지 허용하도록 수정.
 - PS2 interface 를 제거.
 - mmd1100 chip 컨트롤을 HW SPI 엔진을 사용 하던 것을 GPIO를 사용하도록 변경.
 - LPU230 REV F.x PCB( ganymede board )에서 Magtek DeltaAsic 및 mmd1100 동시 지원.
 
-## 2014.6.12 - callisto version 3.10
+## 2014.6.12 - [callisto version 3.10](../lpu237/old_raw/lpu237_3.10.zip)
 - 현재 inteface 가 usb keyboard mode 일 때, ISO2 트랙 최대 길이를 38자(STX, ETX, LRC 포함 하면 41자) 까지 허용하도록 수정.
 - PS2 interface 를 제거.
 
