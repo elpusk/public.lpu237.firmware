@@ -1,5 +1,19 @@
 # public.lpu23x.firmware
 
+## firmware 파일 종류
+### 확장자가 bin 인 fimware 파일
+* 마이컴이 직접 실행 할 수 있는 이진 데이터가 저장된 파일.
+* 어느 장비에 사용되는 이진 데이터인지 알수 없음.
+  * 크기가 항상 32K bytes 인 파일 
+    * bootloader 이진 데이터 와 application 이진 데이터가 같이 있음.
+    * 생산시 이 파일 꼭 필요.
+  * 크기가 24K bytes 이하 인 파일
+    * application 이진 데이터만 있음.
+    * mapper 로 강제 firmware 변경시 사용.
+### 확장자가 rom 인 fimware 파일
+* 1개 이상의 application 이진 데이터들과 application 에 관한 정보를 포함.
+* 자세한 형식은 [홈페이지](https://blog.naver.com/elpusk/222897017053) 참고. 
+
 ## lpu237 - [history](./doc/history_lpu237.md)
 ### 2022.11.14
 * 버전
