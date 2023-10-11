@@ -1,4 +1,12 @@
 # lpu238 history
+## 2023.10.11 - release v1.1
+* i-button None Mode 에서, USB keyboard interface 면, i-button 전송범위 선택 가능 추가.
+* i-button None Mode 에서, Virtual COM interface 면, i-button 전송범위 선택 가능 추가.
+* i-button None Mode 에서, Real COM interface 면, i-button 전송범위 선택 가능 추가.
+* 선택 가능한 범위는 0~15(최소 한 개는 선택되야함).
+* Virtual COM interface에서 Real COM를 같이 연결한 상태에서, i-button 이 Addmit Polling 모드이면, 응답이 Real COM 쪽으로 가는 문제 수정. 
+
+
 ## 2023.08.03 - release v1.0
 * lpu237 ganymede 용 v5.21 기반으로 제작
 * flash 용량 부족으로 usb key board interface 삭제.

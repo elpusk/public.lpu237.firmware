@@ -14,51 +14,27 @@
 * 1개 이상의 application 이진 데이터들과 application 에 관한 정보를 포함.
 * 자세한 형식은 [홈페이지](https://blog.naver.com/elpusk/222897017053) 참고. 
 
-## lpu237 - [history](./doc/history_lpu237.md)
-### 2022.11.14
+## lpu237 - [history](./doc/history_lpu237.md) 및 lpu238 - [history](./doc/history_lpu238.md)
+### 2023.10.11
 * 버전
-  * callisto v3.22 과  ganymede v5.21
+  * callisto v3.23 ,ganymede v5.22, europa v1.1
 * 배포 파일
-  * [lpu237_00026.zip](./lpu237/lpu237_00026.zip)
+  * [lpu23x_00027.zip](./lpu23x/lpu23x_00027.zip)
 * 배포 파일 내용
-  * lpu237_00026.rom - callisto 용 v3.22 와 ganymede 용 v5.21 가 포함된 ROM file.
+  * lpu23x_00027.rom - callisto 용 v3.23 , ganymede 용 v5.22, europa 용 v1.1 이 포함된 ROM file.
   * Update 가능 조건 - target device 의 버전이 ROM 파일에 포함된 firmware 버전 보다 높거나 같음.
-  * tylenol_3.22.bin - lpu237_00026.rom 에 포함된 callisto 용 v3.22 firmware.
-  * tylenol_5.21.bin - lpu237_00026.rom 에 포함된 ganymede 용 v5.21 firmware.
-  * 일반적인 상황에서 firmware 를 업데이트 할 때, lpu237_00026.rom 를 사용.
-  * A/S 등 기타 상황에서 강제로 firmware 를 업데이트 할 때, tylenol_3.22.bin 또는 tylenol_5.21.bin 를 사용.
+  * lpu237_3.23.bin - lpu23x_00027.rom 에 포함된 callisto 용 v3.23 firmware.
+  * lpu237_5.22.bin - lpu23x_00027.rom 에 포함된 ganymede 용 v5.22 firmware.
+  * lpu238_1.1.bin - lpu23x_00027.rom 에 포함된 europa 용 v1.1 firmware.
+  * 일반적인 상황에서 firmware 를 업데이트 할 때, lpu23x_00027.rom 를 사용.
+  * A/S 등 기타 상황에서 강제로 firmware 를 업데이트 할 때, lpu237_3.23.bin ,lpu237_5.22.bin 또는 lpu238_1.1.bin 를 사용.
 * Update program
-  * lpu230.exe(Mapper v1.45.0.4 이상 사용). [Installer](https://github.com/elpusk/public.lpu237.software)
+  * lpu230.exe(Mapper v1.46.0.4 이상 사용). [Installer](https://github.com/elpusk/public.lpu237.software)
   * 업데이트 방법은 Mapper 설치 후, 포함된 Mapper 사용설명서 참고. 
 * 변경 내역
-  * 내부 system structure v4.0 을 변경.
-  * i-button 제거시, 전송되는 키정의 기능 추가.
-  * i-button 데이타에 대한 pre/postfix와 i-button 제거에 대한 pre/postfix 구분 기능 추가.
-
-## lpu238 - [history](./doc/history_lpu238.md)
-### 2023.08.03
-* 변경 내역
-  * test case 결과 추가.
-  * [lpu238_00001.zip](./lpu238/lpu238_rom00001.zip) 는 수정없이 europa v1.0 으로 release 확정.
-### 2023.07.27
-* 버전
-  * europa v1.0
-* 배포 파일
-  * [lpu238_00001.zip](./lpu238/lpu238_rom00001.zip)
-* 배포 파일 내용
-  * lpu238_00001.rom - europa 용 v1.22
-  * Update 가능 조건 - target device 의 버전이 ROM 파일에 포함된 firmware 버전 보다 높거나 같음.
-  * lpu238_1.0.bin - lpu238_00001.rom 에 포함된 europa 용 v1.0 firmware.
-  * 일반적인 상황에서 firmware 를 업데이트 할 때, lpu238_00001.rom 를 사용.
-  * A/S 등 기타 상황에서 강제로 firmware 를 업데이트 할 때, lpu238_1.0.bin 를 사용.
-* Update program
-  * <span style="color:red;">~~lpu230.exe(Mapper v1.46.0.4 이상 사용).~~ - 개발 중.</span>
-  * ~~업데이트 방법은 Mapper 설치 후, 포함된 Mapper 사용설명서 참고.~~
-* 변경 내역
-  * ganymede 용 v5.21 기반
-  * flash 용량 부족으로 usb key board interface 삭제.
-  * Virtual COM(usb CDC) interface 추가.
-  * 장비 인식을 결정하는 USB descriptor 변경으로 USB PID(product ID) 를 0x0214로 설정하고, lpu238 이라는 새로운 model name 생성(참고 - lpu237의 PID 는 0x0206)
+  * i-button None Mode 에서, USB keyboard interface 면, i-button 전송범위 선택 가능 추가.
+  * i-button None Mode 에서, Virtual COM interface 면, i-button 전송범위 선택 가능 추가.
+  * i-button None Mode 에서, Real COM interface 면, i-button 전송범위 선택 가능 추가.
 
 
 ## lpu230_update

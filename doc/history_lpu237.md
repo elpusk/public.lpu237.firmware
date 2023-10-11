@@ -1,6 +1,12 @@
 # lpu237 history
 2023.08.04 부터 기존 history.pdf 문서 firmware 부분 업데이트는 중단 되고. 이 문서로 대체.
 
+## 2023.10.11 - ganymede version 5.22 , callisto version 3.23.
+- i-button None Mode 에서, USB keyboard interface 면, i-button 전송범위 선택 가능 추가.
+- i-button None Mode 에서, Virtual COM interface 면, i-button 전송범위 선택 가능 추가.
+- i-button None Mode 에서, Real COM interface 면, i-button 전송범위 선택 가능 추가.
+- 선택 가능한 범위는 0~15(최소 한 개는 선택되야함).
+
 ## 2022.11.03 - ganymede version 5.21 , callisto version 3.22.
 -	system structure v4.0 을 변경.
 -	i-button 제거시, 전송되는 키정의 기능 추가.
