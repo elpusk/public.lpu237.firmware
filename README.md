@@ -16,10 +16,12 @@
 
 ## lpu237 - [history](./doc/history_lpu237.md) 및 lpu238 - [history](./doc/history_lpu238.md)
 ### 2023.10.11
+* 이 버전 부터 lpu237_숫자.rom 과 lpu238_숫자.rom 은 lpu23x_숫자.rom 으로 통합.
 * 버전
   * callisto v3.23 ,ganymede v5.22, europa v1.1
 * 배포 파일
   * [lpu23x_00027.zip](./lpu23x/lpu23x_00027.zip)
+  * 이 전 버전이 lpu237_00026.rom 과 lpu238_00001.rom 이어서, 이 번 버전의 이름이 lpu23x_00027.rom 이 됨.
 * 배포 파일 내용
   * lpu23x_00027.rom - callisto 용 v3.23 , ganymede 용 v5.22, europa 용 v1.1 이 포함된 ROM file.
   * Update 가능 조건 - target device 의 버전이 ROM 파일에 포함된 firmware 버전 보다 높거나 같음.
