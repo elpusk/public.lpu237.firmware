@@ -45,17 +45,17 @@
 단, 일반적인 경우, mapper(lpu230.exe)를 통한 firmware update가 권장됩니다.
 
 * 버전
-  * lpu230_update.exe v1.2
+  * lpu230_update.exe v1.3
 * 배포 파일
-  * [lpu230_update_v1.2.zip](./lpu230_update/lpu230_update_v1.2.zip)
+  * [lpu230_update_v1.3.zip](./lpu230_update/lpu230_update_v1.3.zip)
 * 배포 파일 내용
-  * lpu230_update.exe v1.2 - 실행파일
+  * lpu230_update.exe v1.3 - 실행파일
   * ng_DDL_hid.dll v1.3 - lpu230_update.exe 가 사용하는 dll.
   * tg_rom.dll v1.2 - lpu230_update.exe 가 사용하는 dll.
-  * lpu230_update_UM_EN_003.pdf - 영문판 일반 사용 설명서.
-  * lpu230_update_UM_KOR_003.pdf - 한글판 일반 사용 설명서.
+  * lpu230_update_UM_EN_004.pdf - 영문판 일반 사용 설명서.
+  * lpu230_update_UM_KOR_004.pdf - 한글판 일반 사용 설명서.
 * 사용방법
-  1. [lpu230_update_v1.2.zip](./lpu230_update/lpu230_update_v1.2.zip) 를 다운받아 원하는 폴더에 압축을 해제.
+  1. [lpu230_update_v1.3.zip](./lpu230_update/lpu230_update_v1.3.zip) 를 다운받아 원하는 폴더에 압축을 해제.
   2. lpu230_update.exe, ng_DDL_hid.dll 과 tg_rom.dll 가 동일한 폴더에 있는지 확인.
   3. 일반 사용 설명서의 내용에 따라 원하는 rom 파일 다운받아 사용.
 * 특수 기능 - 아주 예외적인 경우를 제외하고, 아래에 설명하는 기능은 사용자제.
