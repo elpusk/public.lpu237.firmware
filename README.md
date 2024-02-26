@@ -19,7 +19,7 @@
 * ganymede v5.22.0.1 release.
 * 배포 파일 내용
   * [lpu237_5_22_0_1.zip](./lpu237/5_x_0_1/lpu237_5_22_0_1.zip)
-* Update 가능 조건 - target device 의 버전이 ROM 파일에 포함된 firmware 버전 보다 높거나 같음.
+* Update 가능 조건 - target device 의 버전이 ROM 파일에 포함된 firmware 버전 보다 낮거나 같음.
   * lpu237_5.22.0.1.bin - lpu237_5_22_0_1.rom 에 포함된 ganymede 용 v5.22.0.1 firmware.
   * 일반적인 상황에서 firmware 를 업데이트 할 때, lpu237_5_22_0_1.rom 를 사용.
   * A/S 등 기타 상황에서 강제로 firmware 를 업데이트 할 때, lpu237_5.22.0.1.bin 를 사용.
