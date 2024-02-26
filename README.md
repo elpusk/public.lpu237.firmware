@@ -24,7 +24,7 @@
   * 이 전 버전이 lpu237_00026.rom 과 lpu238_00001.rom 이어서, 이 번 버전의 이름이 lpu23x_00027.rom 이 됨.
 * 배포 파일 내용
   * lpu23x_00027.rom - callisto 용 v3.23 , ganymede 용 v5.22, europa 용 v1.1 이 포함된 ROM file.
-  * Update 가능 조건 - target device 의 버전이 ROM 파일에 포함된 firmware 버전 보다 높거나 같음.
+  * Update 가능 조건 - target device 의 버전이 ROM 파일에 포함된 firmware 버전 보다 낮거나 같음.
   * lpu237_3.23.bin - lpu23x_00027.rom 에 포함된 callisto 용 v3.23 firmware.
   * lpu237_5.22.bin - lpu23x_00027.rom 에 포함된 ganymede 용 v5.22 firmware.
   * lpu238_1.1.bin - lpu23x_00027.rom 에 포함된 europa 용 v1.1 firmware.
@@ -69,7 +69,6 @@
     - mmd1100 decoder chip 생산 단계에서, binary mode 로 변경하기 때문데, 사용자는 실제로 한 번만 mode 변경 가능.
     - lpu237 decoder 가 mmd1100 이 아니 경우, "-mmd1100_iso_mode" 또는 "-mmd1100_binary_mode" 옵션 실행은 decoder 가 mmd1100로 변경되기 전까지 아무런 효과가 없음.
     - mmd1100 decoder 를 사용하는 lpu237을 "-mmd1100_iso_mode" 옵션을 가지고, v5.22.0.1로 업데이트 한 경우.
-      + 업데이트가 성공적으로 완료되면, 부저가 한 번 울리고, 그 후, system parameter 복구 후, mmd1100 를 정상적으로 iso mode 로 설정이 불가능한 경우, 부저가 짧게 두 번 울림.
       + "-mmd1100_iso_mode" 또는 "-mmd1100_binary_mode" 옵션은 lpu237 마이컴 플래쉬 메모리에 mmd1100 decoder mode에 대응하는 system parameter 를 선택된 mode 로 설정하고, 마이컴은 이 system parameter 에 따라, reset 또는 system 작업(mapper 실행 등) 시작 시, mmd1100 을 선택된 mode로 변경을 시도함.
       + mmd1100 mode 변경이 실패한 경우, 부저가 짧게 두 번 울림. 
     - "-mmd1100_iso_mode" option 사용 방법.
