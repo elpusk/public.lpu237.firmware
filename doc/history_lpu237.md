@@ -1,6 +1,15 @@
 # lpu237 history
 2023.08.04 부터 기존 history.pdf 문서 firmware 부분 업데이트는 중단 되고. 이 문서로 대체.
 
+## 2024.02.26 - ganymede version 5.22.0.1
+- ganymede version 5.22.0.1 는 mmd1100_iso_mode 브랜치에서만 얻을 수 있음.
+- ganymede version 5.22에서 combination 기능을 모두 삭제해서, flash 메모리 확보.
+- ganymede version 5.22에서 mmd1100 송신 버퍼 크기를 줄여서, ram 메모리 확보.
+- mmd1100 mode 관련 system parameter 추가.
+- reset 또는 enter config 명령 실행시, mmd1100 mode system parameter에 따라, 현재 mmd1100 과 mode 가 다르면, mode 변경 시도, 변경 실패시, 짧게 두번 부저 울림.
+- 데이터 길이가 짧은 카드에서, mmd1100 을 binary mode 로 동작 시키면, 데이터를 잡음으로 처리해서 무시하는 경우, iso mode 로 변경 하기 위한 업데이트. 그러나 mmd1100를 iso mode 변경하면, 다시 binary mode 로 변경 불가능함. - 엄청 주의
+- WIZNOVA 의 report 에 따르면, MMD1100 은 마그네틱 헤드에서 전송되는 첫 8개의 zero 비트를 검출한 후, 1track 은 24 byte(24x8 bits), 2track 은 14byte(14x8 bits), 3track 은 24 byte(24x8 bits) 만큼의 데이터를 카운트 해서, 데이터 개수가 그 미만이면, 잡음으로 간주해서, 무시 한다고 합니다. 즉, ISO1,3 track 최소 8 bits(zero bits) + 192 bits(stx, data, etx ,lrc) + 8 bits(zero bits ) ISO2 track 최소 8 bits(zero bits) + 112 bits(stx, data, etx ,lrc) + 8 bits(zero bits ) 만큼의 데이터 비트가 있어야 마그네틱 카드 데이터를 무시하지 않고, 읽는 다고 합니다. 
+
 ## 2023.10.11 - ganymede version 5.22 , callisto version 3.23.
 - i-button None Mode 에서, USB keyboard interface 면, i-button 전송범위 선택 가능 추가.
 - i-button None Mode 에서, Virtual COM interface 면, i-button 전송범위 선택 가능 추가.
