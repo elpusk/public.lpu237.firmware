@@ -1,6 +1,9 @@
 # lpu237 history
 2023.08.04 부터 기존 history.pdf 문서 firmware 부분 업데이트는 중단 되고. 이 문서로 대체.
 
+## 2024.04.17 - himalia version 1.0
+- ganymede version 5.22 기능을 MH1902T 마이컴에 전부 포팅하고 이름을 himalia 로 붙임.
+
 ## 2024.02.26 - ganymede version 5.22.0.1
 - ganymede version 5.22.0.1 는 mmd1100_iso_mode 브랜치에서만 얻을 수 있음.
 - ganymede version 5.22에서 combination 기능을 모두 삭제해서, flash 메모리 확보.
