@@ -15,25 +15,25 @@
 * 자세한 형식은 [홈페이지](https://blog.naver.com/elpusk/222897017053) 참고. 
 
 ## lpu237 - [history](./doc/history_lpu237.md) 및 lpu238 - [history](./doc/history_lpu238.md)
-### 2024.04.17
+### 2024.04.18
 * 버전
-  * callisto v3.23 ,ganymede v5.22, europa v1.1, himalia v1.0
+  * callisto v3.23 ,ganymede v5.22, europa v1.1, himalia v1.1
 * 배포 파일
-  * [lpu23x_00028.zip](./lpu23x/lpu23x_00028.zip)
+  * [lpu23x_00029.zip](./lpu23x/lpu23x_00029.zip)
 * 배포 파일 내용
-  * lpu23x_00028.rom - callisto 용 v3.23 , ganymede 용 v5.22, europa 용 v1.1, himalia 용 v1.0 이 포함된 ROM file.
+  * lpu23x_00029.rom - callisto 용 v3.23 , ganymede 용 v5.22, europa 용 v1.1, himalia 용 v1.1 이 포함된 ROM file.
   * Update 가능 조건 - target device 의 버전이 ROM 파일에 포함된 firmware 버전 보다 낮거나 같음.
-  * lpu237_3.23.bin - lpu23x_00028.rom 에 포함된 callisto 용 v3.23 firmware.
-  * lpu237_5.22.bin - lpu23x_00028.rom 에 포함된 ganymede 용 v5.22 firmware.
-  * lpu238_1.1.bin - lpu23x_00028.rom 에 포함된 europa 용 v1.1 firmware.
-  * himalia_1.0.bin - lpu23x_00028.rom 에 포함된 himalia 용 v1.0 firmware.
-  * 일반적인 상황에서 firmware 를 업데이트 할 때, lpu23x_00028.rom 를 사용.
-  * A/S 등 기타 상황에서 강제로 firmware 를 업데이트 할 때, lpu237_3.23.bin ,lpu237_5.22.bin, lpu238_1.1.bin 또는 himalia_1.0.bin 를 사용.
+  * lpu237_3.23.bin - lpu23x_00029.rom 에 포함된 callisto 용 v3.23 firmware.
+  * lpu237_5.22.bin - lpu23x_00029.rom 에 포함된 ganymede 용 v5.22 firmware.
+  * lpu238_1.1.bin - lpu23x_00029.rom 에 포함된 europa 용 v1.1 firmware.
+  * himalia_1.1.bin - lpu23x_00029.rom 에 포함된 himalia 용 v1.1 firmware.
+  * 일반적인 상황에서 firmware 를 업데이트 할 때, lpu23x_00029.rom 를 사용.
+  * A/S 등 기타 상황에서 강제로 firmware 를 업데이트 할 때, lpu237_3.23.bin ,lpu237_5.22.bin, lpu238_1.1.bin 또는 himalia_1.1.bin 를 사용.
 * Update program
   * lpu230.exe(Mapper v1.49.0.4 이상 사용). [Installer](https://github.com/elpusk/public.lpu237.software)
   * 업데이트 방법은 Mapper 설치 후, 포함된 Mapper 사용설명서 참고. 
 * 변경 내역
-  * 새로운 마이컴에 ganymede v5.22 기능을 모두 포팅한 himalia 펨웨어 추가.
+  * 새로운 마이컴에 ganymede v5.22 기능을 모두 포팅한 himalia 펨웨어 v1.0 에서 부저꺼도 소리나는 문제 수정.
 
 
 ## lpu230_update

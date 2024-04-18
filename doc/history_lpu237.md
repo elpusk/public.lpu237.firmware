@@ -1,6 +1,9 @@
 # lpu237 history
 2023.08.04 부터 기존 history.pdf 문서 firmware 부분 업데이트는 중단 되고. 이 문서로 대체.
 
+## 2024.04.18 - himalia version 1.1
+- 부저꺼도 소리나는 문제 수정. off 시 PWM 부저 주파수 수정.
+
 ## 2024.04.17 - himalia version 1.0
 - ganymede version 5.22 기능을 MH1902T 마이컴에 전부 포팅하고 이름을 himalia 로 붙임.
 
