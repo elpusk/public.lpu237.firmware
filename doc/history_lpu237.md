@@ -1,6 +1,17 @@
 # lpu237 history
 2023.08.04 부터 기존 history.pdf 문서 firmware 부분 업데이트는 중단 되고. 이 문서로 대체.
 
+## 2024.05.08 - himalia version 2.0
+- 암호화 기능 추가.
+- 암호화 기능이 활성화 되면, firmwatr 를 download 해야만, 암호화 기능이 비 활성화됨.
+- 암호화 기능이 활성화 되면
+    * usb hid, usb keyboard, uart interface 에 모두 영향이 미침.
+    * msr은 항상 iso 1,2,3 순서로 암호화해서 전송.
+    * msr은 항상 combiantion 0 만 적용해서 암호화해서 전송.
+    * usb hid interface 에서는 다수의 220 bytes 크기의 report 가 전송되는데, 각 report 앞에 있는 0xE6,0xE6,0xE6 3 bytes 를 제거 후, 전송된 모든 report 를 하나의 바이트 스트림으로 연결 한 후, 이 바이트 스트림의 각 바이트를 2자리 16진수 ASCII 코드로 변경한 문자열은 usbkeyboard, uart interface 에서 전송되는 문자열에서 global pre/postfix를 제거한 문자열과 동일하다.
+    * usbkeyboard, uart interface에서 데이타 전송시, global pre/postfix는 항상 전송되고, private pre/postfix 는 무시된다.
+    * transaction 마다 변겨되는 인자를 저장하기 위한 flash rom 은 총 1600개가 있음.
+
 ## 2024.04.18 - himalia version 1.1
 - 부저꺼도 소리나는 문제 수정. off 시 PWM 부저 주파수 수정.
 
