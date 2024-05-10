@@ -1,6 +1,10 @@
 # lpu237 history
 2023.08.04 부터 기존 history.pdf 문서 firmware 부분 업데이트는 중단 되고. 이 문서로 대체.
 
+## 2024.05.10 - himalia version 2.1
+- Exteranl authentication 5회 실패해서, security status 가 BLOCK  인데, MSR 데이터 날로 보내는 문제 수정.
+- security status 가 BLOCK, 카드 읽거나 secure 명령하면, 2 times ring buzzer.
+
 ## 2024.05.08 - himalia version 2.0
 - 암호화 기능 추가.
 - 암호화 기능이 활성화 되면, firmwatr 를 download 해야만, 암호화 기능이 비 활성화됨.

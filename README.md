@@ -15,33 +15,27 @@
 * 자세한 형식은 [홈페이지](https://blog.naver.com/elpusk/222897017053) 참고. 
 
 ## lpu237 - [history](./doc/history_lpu237.md) 및 lpu238 - [history](./doc/history_lpu238.md)
-## 2024.05.08
+## 2024.05.10
 * 버전
-  * callisto v3.23 ,ganymede v5.22, europa v1.1, himalia v2.0.
+  * callisto v3.23 ,ganymede v5.22, europa v1.1, himalia v2.1.
 * 배포 파일
-  * [lpu23x_00030.zip](./lpu23x/lpu23x_00030.zip)
+  * [lpu23x_00031.zip](./lpu23x/lpu23x_00031.zip)
 * 배포 파일 내용
-  * lpu23x_00030.rom - callisto 용 v3.23 , ganymede 용 v5.22, europa 용 v1.1, himalia 용 v2.0 이 포함된 ROM file.
+  * lpu23x_00031.rom - callisto 용 v3.23 , ganymede 용 v5.22, europa 용 v1.1, himalia 용 v2.1 이 포함된 ROM file.
   * Update 가능 조건 - target device 의 버전이 ROM 파일에 포함된 firmware 버전 보다 낮거나 같음.
-  * lpu237_3.23.bin - lpu23x_00030.rom 에 포함된 callisto 용 v3.23 firmware.
-  * lpu237_5.22.bin - lpu23x_00030.rom 에 포함된 ganymede 용 v5.22 firmware.
-  * lpu238_1.1.bin - lpu23x_00030.rom 에 포함된 europa 용 v1.1 firmware.
-  * himalia_2.0.bin - lpu23x_00030.rom 에 포함된 himalia 용 v2.0 firmware.
-  * 일반적인 상황에서 firmware 를 업데이트 할 때, lpu23x_00030.rom 를 사용.
-  * A/S 등 기타 상황에서 강제로 firmware 를 업데이트 할 때, lpu237_3.23.bin ,lpu237_5.22.bin, lpu238_1.1.bin 또는 himalia_2.0.bin 를 사용.
+  * lpu237_3.23.bin - lpu23x_00031.rom 에 포함된 callisto 용 v3.23 firmware.
+  * lpu237_5.22.bin - lpu23x_00031.rom 에 포함된 ganymede 용 v5.22 firmware.
+  * lpu238_1.1.bin - lpu23x_00031.rom 에 포함된 europa 용 v1.1 firmware.
+  * himalia_2.1.bin - lpu23x_00031.rom 에 포함된 himalia 용 v2.1 firmware.
+  * 일반적인 상황에서 firmware 를 업데이트 할 때, lpu23x_00031.rom 를 사용.
+  * A/S 등 기타 상황에서 강제로 firmware 를 업데이트 할 때, lpu237_3.23.bin ,lpu237_5.22.bin, lpu238_1.1.bin 또는 himalia_2.1.bin 를 사용.
 * Update program
   * lpu230.exe(Mapper v1.49.0.4 이상 사용). [Installer](https://github.com/elpusk/public.lpu237.software)
   * 업데이트 방법은 Mapper 설치 후, 포함된 Mapper 사용설명서 참고. 
 * 변경 내역
-  - 암호화 기능 추가.
-  - 암호화 기능이 활성화 되면, firmwatr 를 download 해야만, 암호화 기능이 비 활성화됨.
-  - 암호화 기능이 활성화 되면
-     * usb hid, usb keyboard, uart interface 에 모두 영향이 미침.
-     * msr은 항상 iso 1,2,3 순서로 암호화해서 전송.
-     * msr은 항상 combiantion 0 만 적용해서 암호화해서 전송.
-     * usb hid interface 에서는 다수의 220 bytes 크기의 report 가 전송되는데, 각 report 앞에 있는 0xE6,0xE6,0xE6 3 bytes 를 제거 후, 전송된 모든 report 를 하나의 바이트 스트림으로 연결 한 후, 이 바이트 스트림의 각 바이트를 2자리 16진수 ASCII 코드로 변경한 문자열은 usbkeyboard, uart interface 에서 전송되는 문자열에서 global pre/postfix를 제거한 문자열과 동일하다.
-     * usbkeyboard, uart interface에서 데이타 전송시, global pre/postfix는 항상 전송되고, private pre/postfix 는 무시된다.
-     * transaction 마다 변겨되는 인자를 저장하기 위한 flash rom 은 총 1600개가 있음.
+  - 암호화 기능에서
+  - Exteranl authentication 5회 실패해서, security status 가 BLOCK  인데, MSR 데이터 날로 보내는 문제 수정.
+  - security status 가 BLOCK, 카드 읽거나 secure 명령하면, 2 times ring buzzer.
 
 ## lpu230_update
 이 프로그램은 lpu237, lpu238 firmware 를 mapper(lpu230.exe) 설치 없이 변경 할 수 있다. 이 버전은 himalia 미지원.
