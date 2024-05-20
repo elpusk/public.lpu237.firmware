@@ -15,27 +15,25 @@
 * 자세한 형식은 [홈페이지](https://blog.naver.com/elpusk/222897017053) 참고. 
 
 ## lpu237 - [history](./doc/history_lpu237.md) 및 lpu238 - [history](./doc/history_lpu238.md)
-## 2024.05.10
+## 2024.05.21
 * 버전
-  * callisto v3.23 ,ganymede v5.22, europa v1.1, himalia v2.1.
+  * callisto v3.23 ,ganymede v5.22, europa v1.1, himalia v2.2.
 * 배포 파일
-  * [lpu23x_00031.zip](./lpu23x/lpu23x_00031.zip)
+  * [lpu23x_00032.zip](./lpu23x/lpu23x_00032.zip)
 * 배포 파일 내용
-  * lpu23x_00031.rom - callisto 용 v3.23 , ganymede 용 v5.22, europa 용 v1.1, himalia 용 v2.1 이 포함된 ROM file.
+  * lpu23x_00032.rom - callisto 용 v3.23 , ganymede 용 v5.22, europa 용 v1.1, himalia 용 v2.2 이 포함된 ROM file.
   * Update 가능 조건 - target device 의 버전이 ROM 파일에 포함된 firmware 버전 보다 낮거나 같음.
-  * lpu237_3.23.bin - lpu23x_00031.rom 에 포함된 callisto 용 v3.23 firmware.
-  * lpu237_5.22.bin - lpu23x_00031.rom 에 포함된 ganymede 용 v5.22 firmware.
-  * lpu238_1.1.bin - lpu23x_00031.rom 에 포함된 europa 용 v1.1 firmware.
-  * himalia_2.1.bin - lpu23x_00031.rom 에 포함된 himalia 용 v2.1 firmware.
-  * 일반적인 상황에서 firmware 를 업데이트 할 때, lpu23x_00031.rom 를 사용.
-  * A/S 등 기타 상황에서 강제로 firmware 를 업데이트 할 때, lpu237_3.23.bin ,lpu237_5.22.bin, lpu238_1.1.bin 또는 himalia_2.1.bin 를 사용.
+  * lpu237_3.23.bin - lpu23x_00032.rom 에 포함된 callisto 용 v3.23 firmware.
+  * lpu237_5.22.bin - lpu23x_00032.rom 에 포함된 ganymede 용 v5.22 firmware.
+  * lpu238_1.1.bin - lpu23x_00032.rom 에 포함된 europa 용 v1.1 firmware.
+  * himalia_2.2.bin - lpu23x_00032.rom 에 포함된 himalia 용 v2.2 firmware.
+  * 일반적인 상황에서 firmware 를 업데이트 할 때, lpu23x_00032.rom 를 사용.
+  * A/S 등 기타 상황에서 강제로 firmware 를 업데이트 할 때, lpu237_3.23.bin ,lpu237_5.22.bin, lpu238_1.1.bin 또는 himalia_2.2.bin 를 사용.
 * Update program
   * lpu230.exe(Mapper v1.49.0.4 이상 사용). [Installer](https://github.com/elpusk/public.lpu237.software)
   * 업데이트 방법은 Mapper 설치 후, 포함된 Mapper 사용설명서 참고. 
 * 변경 내역
-  - 암호화 기능에서
-  - Exteranl authentication 5회 실패해서, security status 가 BLOCK  인데, MSR 데이터 날로 보내는 문제 수정.
-  - security status 가 BLOCK, 카드 읽거나 secure 명령하면, 2 times ring buzzer.
+  - 안드로이드에서 usb interrupt transfer type 의 경우, firmware 와 리눅스 드라이버와 프로토콜 맞지 않아 수정.
 
 ## lpu230_update
 이 프로그램은 lpu237, lpu238 firmware 를 mapper(lpu230.exe) 설치 없이 변경 할 수 있다. 이 버전은 himalia 미지원.
