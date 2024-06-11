@@ -1,6 +1,10 @@
 # lpu237 history
 2023.08.04 부터 기존 history.pdf 문서 firmware 부분 업데이트는 중단 되고. 이 문서로 대체.
 
+## 2024.06.12 - himalia version 2.3
+- 안드로이드에서 usb vendor hid interface 사용시, driver 에서 polling 이 없어서, 카드 읽으면, reset 되는 문제 수정.
+- EnterOpos 상태가 아니면, usb vendor hid interface 는 dummy.
+
 ## 2024.05.10 - himalia version 2.2
 - 안드로이드에서 usb interrupt transfer type 의 경우, firmware 와 리눅스 드라이버와 프로토콜 맞지 않아 수정.
 - 같은 문제로 bootloader 도 1.1 로 수정. 생산시 주의 요망.
