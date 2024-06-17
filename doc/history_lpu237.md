@@ -1,6 +1,9 @@
 # lpu237 history
 2023.08.04 부터 기존 history.pdf 문서 firmware 부분 업데이트는 중단 되고. 이 문서로 대체.
 
+## 2024.06.17 - callisto v3.24, ganymede v5.23, himalia version 2.4
+- 안드로이드에서 usb vendor hid interface 사용시, driver 에서 polling 이 없어서, i-button, reset 되는 문제 수정. 최소화를 위해 ibutton start/stop command 추가.
+
 ## 2024.06.12 - himalia version 2.3
 - 안드로이드에서 usb vendor hid interface 사용시, driver 에서 polling 이 없어서, 카드 읽으면, reset 되는 문제 수정.
 - EnterOpos 상태가 아니면, usb vendor hid interface 는 dummy.

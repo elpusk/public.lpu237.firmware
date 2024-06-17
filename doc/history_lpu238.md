@@ -1,4 +1,8 @@
 # lpu238 history
+
+## 2024.06.17 - release v1.2
+- 안드로이드에서 usb vendor hid interface 사용시, driver 에서 polling 이 없어서, i-button, reset 되는 문제 수정. 최소화를 위해 ibutton start/stop command 추가.
+
 ## 2023.10.11 - release v1.1
 * i-button None Mode 에서, USB keyboard interface 면, i-button 전송범위 선택 가능 추가.
 * i-button None Mode 에서, Virtual COM interface 면, i-button 전송범위 선택 가능 추가.
