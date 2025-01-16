@@ -1,4 +1,6 @@
 # public.lpu23x.firmware
+* 이 branch 는 single-firmware 배포를 위해 사용됨.
+* 일반적인 경우는 main branch 사용.
 
 ## firmware 파일 종류
 ### 확장자가 bin 인 fimware 파일
@@ -15,25 +17,21 @@
 * 자세한 형식은 [홈페이지](https://blog.naver.com/elpusk/222897017053) 참고. 
 
 ## lpu237 - [history](./doc/history_lpu237.md) 및 lpu238 - [history](./doc/history_lpu238.md)
-## 2024.06.17
+## 2025.01.16
 * 버전
-  * callisto v3.24 ,ganymede v5.23, europa v1.2, himalia v2.4.
+  * ganymede v5.24
 * 배포 파일
-  * [lpu23x_00034.zip](./lpu23x/lpu23x_00034.zip)
+  * [lpu237_5_24.zip](./lpu237/lpu237_5_24.zip)
 * 배포 파일 내용
-  * lpu23x_00034.rom - callisto 용 v3.24 , ganymede 용 v5.23, europa 용 v1.2, himalia 용 v2.4 이 포함된 ROM file.
+  * lpu237_5_24.rom - ganymede 용 v5.24 이 포함된 ROM file.
   * Update 가능 조건 - target device 의 버전이 ROM 파일에 포함된 firmware 버전 보다 낮거나 같음.
-  * lpu237_3.24.bin - lpu23x_00034.rom 에 포함된 callisto 용 v3.24 firmware.
-  * lpu237_5.23.bin - lpu23x_00034.rom 에 포함된 ganymede 용 v5.23 firmware.
-  * lpu238_1.2.bin - lpu23x_00034.rom 에 포함된 europa 용 v1.2 firmware.
-  * himalia_2.4.bin - lpu23x_00034.rom 에 포함된 himalia 용 v2.4 firmware.
-  * 일반적인 상황에서 firmware 를 업데이트 할 때, lpu23x_00034.rom 를 사용.
-  * A/S 등 기타 상황에서 강제로 firmware 를 업데이트 할 때, lpu237_3.24.bin ,lpu237_5.23.bin, lpu238_1.2.bin 또는 himalia_2.4.bin 를 사용.
+  * 일반적인 상황에서 firmware 를 업데이트 할 때, lpu237_5_24.rom 를 사용.
+  * A/S 등 기타 상황에서 강제로 firmware 를 업데이트 할 때, tylenol_5.24.bin 를 사용.
 * Update program
   * lpu230.exe(Mapper v1.49.0.4 이상 사용). [Installer](https://github.com/elpusk/public.lpu237.software)
   * 업데이트 방법은 Mapper 설치 후, 포함된 Mapper 사용설명서 참고. 
 * 변경 내역
-  - 안드로이드에서 usb vendor hid interface 사용시, driver 에서 polling 이 없어서, 카드 읽으면, reset 되는 문제 수정.(himalia only)
+  - 이스라엘에서 발견된 일명 orange 카드로가, 역방향 읽기시, 특수 사양을 읽기 위해, 무시된 LRC 한비트의 영향으로 발생하는 오류 수정하기 위해 무시 부분을 다시 활성화.
 
 ## lpu230_update
 이 프로그램은 lpu237, lpu238 firmware 를 mapper(lpu230.exe) 설치 없이 변경 할 수 있다. 이 버전은 himalia 미지원.

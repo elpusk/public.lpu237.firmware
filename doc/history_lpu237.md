@@ -1,6 +1,10 @@
 # lpu237 history
 2023.08.04 부터 기존 history.pdf 문서 firmware 부분 업데이트는 중단 되고. 이 문서로 대체.
 
+## 2025.01.16 - ganymede v5.24
+- 이스라엘에서 발견된 일명 orange 카드로가, 역방향 읽기시, 특수 사양을 읽기 위해, 무시된 LRC 한비트의 영향으로 발생하는 오류 수정하기 위해 무시 부분을 다시 활성화.
+- 오류 증상 : 역방향 읽기시, 마지막으로 읽은 카드의 데이타 나오다 짤림.
+
 ## 2024.06.17 - callisto v3.24, ganymede v5.23, himalia version 2.4
 - 안드로이드에서 usb vendor hid interface 사용시, driver 에서 polling 이 없어서, i-button, reset 되는 문제 수정. 최소화를 위해 ibutton start/stop command 추가.
 
