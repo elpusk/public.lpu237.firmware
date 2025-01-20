@@ -1,5 +1,10 @@
 # public.lpu23x.firmware
 
+## 이 저장소의 브랜치.(사용전 알맞는 브랜치 설정) 
+* main - 모든 모델에 대한 통합 firmware 업로드, 변경 사항을 기록.
+* mmd1100_iso_mode - mmd1100(위즈노바) 디코더를 ISO mode(디코더가 카드 데이터를 ISO 규격에 따라 ASCII 코드 자동 변경) 로 사용하는 ganymede 제품에 대한 단독 firmware 업로드, 변경 사항을 기록.
+* single_firmware - mmd1100 ISO mode 를 제외 한, 단일 firmware 로 구성된 rom 파일 업로드, 변경 사항을 기록.(빠른 업로드가 목적)
+
 ## firmware 파일 종류
 ### 확장자가 bin 인 fimware 파일
 * 마이컴이 직접 실행 할 수 있는 이진 데이터가 저장된 파일.
