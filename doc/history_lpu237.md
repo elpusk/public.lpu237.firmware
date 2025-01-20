@@ -1,6 +1,10 @@
 # lpu237 history
 2023.08.04 부터 기존 history.pdf 문서 firmware 부분 업데이트는 중단 되고. 이 문서로 대체.
 
+## 2025.01.21 - callisto v3.25, ganymede v5.25, europa v1.3, himalia version 2.5
+- lpu23x_00035.rom file
+- STX, ETX, LRC 로만 구성된 카드 데이터는 정상에서 에러 처리로 변경.   
+
 ## 2024.06.17 - callisto v3.24, ganymede v5.23, himalia version 2.4
 - 안드로이드에서 usb vendor hid interface 사용시, driver 에서 polling 이 없어서, i-button, reset 되는 문제 수정. 최소화를 위해 ibutton start/stop command 추가.
 
