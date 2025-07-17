@@ -1,7 +1,7 @@
-# lpu237 history
+# lpu237 history( europa 는 [lpu238 history 참고](history_lpu238.md) )
 2023.08.04 부터 기존 history.pdf 문서 firmware 부분 업데이트는 중단 되고. 이 문서로 대체.
 
-## 2025.01.21 - callisto v3.25, ganymede v5.25, europa v1.3, himalia version 2.5
+## 2025.01.21 - callisto v3.25, ganymede v5.25, himalia version 2.5
 - lpu23x_00035.rom file
 - STX, ETX, LRC 로만 구성된 카드 데이터는 정상에서 에러 처리로 변경.   
 
