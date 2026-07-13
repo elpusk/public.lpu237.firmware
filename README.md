@@ -1,6 +1,7 @@
 # public.lpu23x.firmware
 
 ## 이 저장소의 브랜치.(사용전 알맞는 브랜치 설정) 
+
 * main - 모든 모델에 대한 통합 firmware 업로드, 변경 사항을 기록.
 * mmd1100_iso_mode - mmd1100(위즈노바) 디코더를 ISO mode(디코더가 카드 데이터를 ISO 규격에 따라 ASCII 코드 자동 변경) 로 사용하는 ganymede 제품에 대한 단독 firmware 업로드, 변경 사항을 기록.
 * single_firmware - mmd1100 ISO mode 를 제외 한, 단일 firmware 로 구성된 rom 파일 업로드, 변경 사항을 기록.(빠른 업로드가 목적)
@@ -8,7 +9,9 @@
 ## [Rom 파일 속의 Firmware](rom_file_name.md)
 
 ## firmware 파일 종류
+
 ### 확장자가 bin 인 fimware 파일
+
 * 마이컴이 직접 실행 할 수 있는 이진 데이터가 저장된 파일.
 * 어느 장비에 사용되는 이진 데이터인지 알수 없음.
   * 크기가 항상 32K bytes 인 파일 
@@ -17,16 +20,23 @@
   * 크기가 24K bytes 이하 인 파일
     * application 이진 데이터만 있음.
     * mapper 로 강제 firmware 변경시 사용.
+
 ### 확장자가 rom 인 fimware 파일
+
 * 1개 이상의 application 이진 데이터들과 application 에 관한 정보를 포함.
 * 자세한 형식은 [홈페이지](https://blog.naver.com/elpusk/222897017053) 참고. 
 
 ## lpu237 - [history](./doc/history_lpu237.md) 및 lpu238 - [history](./doc/history_lpu238.md)
-## 2025.01.21
+
+## 2026.07.13
+
+기존 버전에 SBOM 만 추가.
+
 * 버전
   * callisto v3.25 ,ganymede v5.25, europa v1.3, himalia v2.5.
 * 배포 파일
-  * [lpu23x_00035.zip](./lpu23x/lpu23x_00035.zip)
+  * [lpu23x_00035.zip](./lpu23x/lpu23x_00035.zip).
+  * [SBOM 포함된 lpu23x_00035.zip](./lpu23x/lpu23x_00035_sbom.zip)
 * 배포 파일 내용
   * lpu23x_00035.rom - callisto 용 v3.25 , ganymede 용 v5.25, europa 용 v1.3, himalia 용 v2.5 이 포함된 ROM file.
   * Update 가능 조건 - target device 의 버전이 ROM 파일에 포함된 firmware 버전 보다 낮거나 같음.
@@ -43,6 +53,7 @@
   - 안드로이드에서 usb vendor hid interface 사용시, driver 에서 polling 이 없어서, 카드 읽으면, reset 되는 문제 수정.(himalia only)
 
 ## lpu230_update
+
 이 프로그램은 lpu237, lpu238 firmware 를 mapper(lpu230.exe) 설치 없이 변경 할 수 있다. 이 버전은 himalia 미지원.
 
 단, 일반적인 경우, mapper(lpu230.exe)를 통한 firmware update가 권장됩니다.
