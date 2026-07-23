@@ -1,6 +1,9 @@
 
 # Firmwares of rom file
 
+## [lpu23x_00036.rom](./lpu23x/lpu23x_00036_sbom.zip)
+ - callisto_3.25.0.0 + ganymede_5.25.0.0 + europa_1.3.0.0 + himalia_2.6.0.0
+
 ## [lpu23x_00035.rom](https://github.com/elpusk/public.lpu237.firmware/blob/0a8e711dc67431647764c4e3db0939f8cbb68e12/lpu23x/lpu23x_00035.zip)
  - callisto_3.25.0.0 + ganymede_5.25.0.0 + europa_1.3.0.0 + himalia_2.5.0.0
 

@@ -1,6 +1,12 @@
 # lpu237 history( europa 는 [lpu238 history 참고](history_lpu238.md) )
 2023.08.04 부터 기존 history.pdf 문서 firmware 부분 업데이트는 중단 되고. 이 문서로 대체.
 
+## 2026.07.23 - callisto v3.25, ganymede v5.25, himalia version 2.6
+- lpu23x_00036.rom file
+- himalia 에서 USB key 입력 간 지연 시간을 callisto, ganymede, europa 만큼 줄임.
+- 빠르게 입력되는 키는 application 키 처리 방식에 따라 키를 놓칠수 있으나, reader 는 오류는 아님
+- [키입력 지연 검사 프로그램](https://github.com/elpusk006/test.key-speed) 을 사용해서 테스트 가능. Rust 형식의 키처리 방식 권고. 
+
 ## 2025.01.21 - callisto v3.25, ganymede v5.25, himalia version 2.5
 - lpu23x_00035.rom file
 - STX, ETX, LRC 로만 구성된 카드 데이터는 정상에서 에러 처리로 변경.   

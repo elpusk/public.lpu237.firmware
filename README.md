@@ -28,29 +28,28 @@
 
 ## lpu237 - [history](./doc/history_lpu237.md) 및 lpu238 - [history](./doc/history_lpu238.md)
 
-## 2026.07.13
+## 2026.07.23
 
-기존 버전에 SBOM 만 추가.
+himalia 만 USB key latency 를 줄이기 위해 업데이트.
 
 * 버전
-  * callisto v3.25 ,ganymede v5.25, europa v1.3, himalia v2.5.
+  * callisto v3.25 ,ganymede v5.25, europa v1.3, himalia v2.6.
 * 배포 파일
-  * [lpu23x_00035.zip](./lpu23x/lpu23x_00035.zip).
-  * [SBOM 포함된 lpu23x_00035.zip](./lpu23x/lpu23x_00035_sbom.zip)
+  * [SBOM 포함된 lpu23x_00036.zip](./lpu23x/lpu23x_00036_sbom.zip)
 * 배포 파일 내용
-  * lpu23x_00035.rom - callisto 용 v3.25 , ganymede 용 v5.25, europa 용 v1.3, himalia 용 v2.5 이 포함된 ROM file.
+  * lpu23x_00036.rom - callisto 용 v3.25 , ganymede 용 v5.25, europa 용 v1.3, himalia 용 v2.6 이 포함된 ROM file.
   * Update 가능 조건 - target device 의 버전이 ROM 파일에 포함된 firmware 버전 보다 낮거나 같음.
-  * lpu237_3.25.bin - lpu23x_00035.rom 에 포함된 callisto 용 v3.25 firmware.
-  * lpu237_5.25.bin - lpu23x_00035.rom 에 포함된 ganymede 용 v5.25 firmware.
-  * lpu238_1.3.bin - lpu23x_00035.rom 에 포함된 europa 용 v1.3 firmware.
-  * himalia_2.5.bin - lpu23x_00035.rom 에 포함된 himalia 용 v2.5 firmware.
-  * 일반적인 상황에서 firmware 를 업데이트 할 때, lpu23x_00035.rom 를 사용.
-  * A/S 등 기타 상황에서 강제로 firmware 를 업데이트 할 때, lpu237_3.25.bin ,lpu237_5.25.bin, lpu238_1.3.bin 또는 himalia_2.5.bin 를 사용.
+  * lpu237_3.25.bin - lpu23x_00036.rom 에 포함된 callisto 용 v3.25 firmware.
+  * lpu237_5.25.bin - lpu23x_00036.rom 에 포함된 ganymede 용 v5.25 firmware.
+  * lpu238_1.3.bin - lpu23x_00036.rom 에 포함된 europa 용 v1.3 firmware.
+  * himalia_2.6.bin - lpu23x_00036.rom 에 포함된 himalia 용 v2.6 firmware.
+  * 일반적인 상황에서 firmware 를 업데이트 할 때, lpu23x_00036.rom 를 사용.
+  * A/S 등 기타 상황에서 강제로 firmware 를 업데이트 할 때, lpu237_3.25.bin ,lpu237_5.25.bin, lpu238_1.3.bin 또는 himalia_2.6.bin 를 사용.
 * Update program
   * lpu230.exe(Mapper v1.49.0.4 이상 사용). [Installer](https://github.com/elpusk/public.lpu237.software)
   * 업데이트 방법은 Mapper 설치 후, 포함된 Mapper 사용설명서 참고. 
 * 변경 내역
-  - 안드로이드에서 usb vendor hid interface 사용시, driver 에서 polling 이 없어서, 카드 읽으면, reset 되는 문제 수정.(himalia only)
+  - himalia 에서 USB key 입력 간 지연 시간 최소한으로 변경.(callisto, ganymede, europa 만큼 빠르게)
 
 ## lpu230_update
 
