@@ -53,22 +53,22 @@ himalia 만 USB key latency 를 줄이기 위해 업데이트.
 
 ## lpu230_update
 
-이 프로그램은 lpu237, lpu238 firmware 를 mapper(lpu230.exe) 설치 없이 변경 할 수 있다. 이 버전은 himalia 미지원.
+이 프로그램은 lpu237, lpu238 firmware 를 mapper(lpu230.exe) 설치 없이 변경 할 수 있다. 이 버전은 himalia 지원.
 
 단, 일반적인 경우, mapper(lpu230.exe)를 통한 firmware update가 권장됩니다.
 
 * 버전
-  * lpu230_update.exe v1.4 (2023.2.26 업데이트)
+  * lpu230_update.exe v1.5 (2024.4.18 업데이트)
 * 배포 파일
-  * [lpu230_update_v1.4.zip](./lpu230_update/lpu230_update_v1.4.zip)
+  * [lpu230_update_v1.5.zip](./lpu230_update/lpu230_update_v1.5.zip)
 * 배포 파일 내용
-  * lpu230_update.exe v1.4 - 실행파일
-  * ng_DDL_hid.dll v1.4 - lpu230_update.exe 가 사용하는 dll.
+  * lpu230_update.exe v1.5 - 실행파일
+  * ng_DDL_hid.dll v1.3 - lpu230_update.exe 가 사용하는 dll.
   * tg_rom.dll v1.2 - lpu230_update.exe 가 사용하는 dll.
-  * lpu230_update_UM_EN_005.pdf - 영문판 일반 사용 설명서.
-  * lpu230_update_UM_KOR_005.pdf - 한글판 일반 사용 설명서.
+  * lpu230_update_UM_EN_006.pdf - 영문판 일반 사용 설명서.
+  * lpu230_update_UM_KOR_006.pdf - 한글판 일반 사용 설명서.
 * 사용방법
-  1. [lpu230_update_v1.4.zip](./lpu230_update/lpu230_update_v1.4.zip) 를 다운받아 원하는 폴더에 압축을 해제.
+  1. [lpu230_update_v1.5.zip](./lpu230_update/lpu230_update_v1.5.zip) 를 다운받아 원하는 폴더에 압축을 해제.
   2. lpu230_update.exe, ng_DDL_hid.dll 과 tg_rom.dll 가 동일한 폴더에 있는지 확인.
   3. 일반 사용 설명서의 내용에 따라 원하는 rom 파일 다운받아 사용.
 * 특수 기능 - 아주 예외적인 경우를 제외하고, 아래에 설명하는 기능은 사용자제.
