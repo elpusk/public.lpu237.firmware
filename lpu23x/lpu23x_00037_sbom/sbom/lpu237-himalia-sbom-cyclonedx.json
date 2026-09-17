@@ -1,0 +1,87 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.7",
+  "serialNumber": "urn:uuid:f3439832-cf34-4c46-a3ed-14c33069a126",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-07-23T12:23:00+09:00",
+    "authors": [
+      { "name": "Elpusk.Co.,Ltd"}
+    ],
+    "component": {
+      "bom-ref": "lpu237-himalia-2.6.0",
+      "type": "firmware",
+      "name": "lpu237-himalia" ,
+      "version": "2.6.0",
+      "purl": "pkg:generic/lpu237-himalia@2.6.0",
+      "hashes": [
+        { "alg": "SHA-256", "content": "60A44223E9B06B480441806C82AA4EA67076011657A949CCF22AEA1A7DEB056C" }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "libc-5.4.1",
+      "name": "libc",
+      "version": "5.4.1",
+      "supplier": { "name": "Arm Limited" },
+      "description": "Arm GNU C standard library for Cortex-M",
+      "licenses": [
+        { "license": { "name": "Arm GNU" } }
+      ],
+      "hashes": [
+        { "alg": "SHA-256", "content": "DE8F78B90B2E19786262A47D1E84E55C5CAD3AD381D378A9FE62488022CC73CB" }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "arm-cortexM3l-math-1.4.1",
+      "name": "arm-cortexM3l-math",
+      "version": "1.4.1",
+      "supplier": { "name": "Arm Limited" },
+      "description": "Arm GNU Cortex-M3 CMSIS-DSP little-endian software library",
+      "licenses": [
+        { "license": { "name": "Arm GNU" } }
+      ],
+      "hashes": [
+        { "alg": "SHA-256", "content": "B85637E7F09B05D66B0C68DB6EDD0A2C37982D3AFB2F2DC7D0D402122C11084A" }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "arm-cortexM3b-math-1.4.1",
+      "name": "arm-cortexM3b-math",
+      "version": "1.4.1",
+      "supplier": { "name": "Arm Limited" },
+      "description": "Arm GNU Cortex-M3 CMSIS-DSP big-endian software library",
+      "licenses": [
+        { "license": { "name": "Arm GNU" } }
+      ],
+      "hashes": [
+        { "alg": "SHA-256", "content": "3E61D3D066FA2FFB73CFA146E57420711E3D8067122B58C8AF25ECC7E888984B" }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "libmh1902t-msr-gnu-4.7.3",
+      "name": "libmh1902t-msr-gnu",
+      "version": "4.7.3",
+      "supplier": { "name": "Megahunt Technologies" },
+      "description": "Megahunt GNU GCC MH1902T MSR software library",
+      "licenses": [
+        { "license": { "name": "Megahunt GNU" } }
+      ],
+      "hashes": [
+        { "alg": "SHA-256", "content": "7A16FE62BE7745288DD0B156F6FBD9C3CFC5C13007D70F56E6D4149B7A997516" }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "lpu237-himalia-2.6.0",
+      "dependsOn": ["libc-5.4.1", "arm-cortexM3l-math-1.4.1", "arm-cortexM3b-math-1.4.1", "libmh1902t-msr-gnu-4.7.3"]
+    }
+  ]
+}

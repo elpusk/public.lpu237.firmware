@@ -15,11 +15,22 @@
 * 마이컴이 직접 실행 할 수 있는 이진 데이터가 저장된 파일.
 * 어느 장비에 사용되는 이진 데이터인지 알수 없음.
   * 크기가 항상 32K bytes 인 파일 
+    * LPC1343 마이컴을 위한 파일.(callisto, ganymede, europa)
     * bootloader 이진 데이터 와 application 이진 데이터가 같이 있음.
     * 생산시 이 파일 꼭 필요.
   * 크기가 24K bytes 이하 인 파일
+    * LPC1343 마이컴을 위한 파일.(callisto, ganymede, europa)
     * application 이진 데이터만 있음.
     * mapper 로 강제 firmware 변경시 사용.
+  * 이름이 bootloader_x.y.bin 인 파일
+    * MH1902T 마이컴 용, elpusk hid bootloader 이진 파일
+    * MH1902T 마이컴 용, lpu237(himalia), lpu238(elara) 를 생산지, SMT 끝난 보드에 가장 먼저 다운로드해야 할 부트로더
+    * MH1902T 마이컴 용, firmware 는 MH1902T 특성 상, bootloader+app 이진 파일을 만들어 한 번에 다운로드 불가능
+    * 항상 MH1902T 마이컴에서 제공하는 프로그램을 이용해, 이 파일을 다운로드한 다음, 이 bootloader 를 실행해서 app 이진파일을 다운로드해야 한다
+  * 이름이 himalia_x.y.bin
+    * MH1902T 마이컴 용, lpu237(himalia) 이진 파일
+  * 이름이 elara_x.y.bin
+    * MH1902T 마이컴 용, lpu238(elara) 이진 파일
 
 ### 확장자가 rom 인 fimware 파일
 
@@ -28,28 +39,32 @@
 
 ## lpu237 - [history](./doc/history_lpu237.md) 및 lpu238 - [history](./doc/history_lpu238.md)
 
-## 2026.07.23
+## 2026.09.18
 
-himalia 만 USB key latency 를 줄이기 위해 업데이트.
+MH1902T 마이컴 용, lpu238(elara) 추가를 위한 업데이트.
 
 * 버전
-  * callisto v3.25 ,ganymede v5.25, europa v1.3, himalia v2.6.
+  * callisto v3.25 ,ganymede v5.25, europa v1.3, himalia v2.6, elara v1.3
 * 배포 파일
-  * [SBOM 포함된 lpu23x_00036.zip](./lpu23x/lpu23x_00036_sbom.zip)
+  * [SBOM 포함된 lpu23x_00037_sbom.zip](./lpu23x/lpu23x_00037_sbom.zip)
 * 배포 파일 내용
-  * lpu23x_00036.rom - callisto 용 v3.25 , ganymede 용 v5.25, europa 용 v1.3, himalia 용 v2.6 이 포함된 ROM file.
+  * lpu23x_00037.rom - callisto 용 v3.25 , ganymede 용 v5.25, europa 용 v1.3, himalia 용 v2.6, elara 용 v1.3 이 포함된 ROM file.
   * Update 가능 조건 - target device 의 버전이 ROM 파일에 포함된 firmware 버전 보다 낮거나 같음.
-  * lpu237_3.25.bin - lpu23x_00036.rom 에 포함된 callisto 용 v3.25 firmware.
-  * lpu237_5.25.bin - lpu23x_00036.rom 에 포함된 ganymede 용 v5.25 firmware.
-  * lpu238_1.3.bin - lpu23x_00036.rom 에 포함된 europa 용 v1.3 firmware.
-  * himalia_2.6.bin - lpu23x_00036.rom 에 포함된 himalia 용 v2.6 firmware.
-  * 일반적인 상황에서 firmware 를 업데이트 할 때, lpu23x_00036.rom 를 사용.
-  * A/S 등 기타 상황에서 강제로 firmware 를 업데이트 할 때, lpu237_3.25.bin ,lpu237_5.25.bin, lpu238_1.3.bin 또는 himalia_2.6.bin 를 사용.
+  * lpu237_3.25.bin - lpu23x_00037.rom 에 포함된 callisto 용 v3.25 firmware.
+  * lpu237_5.25.bin - lpu23x_00037.rom 에 포함된 ganymede 용 v5.25 firmware.
+  * lpu238_1.3.bin - lpu23x_00037.rom 에 포함된 europa 용 v1.3 firmware.
+  * himalia_2.6.bin - lpu23x_00037.rom 에 포함된 himalia 용 v2.6 firmware.
+  * elara_1.3.bin - lpu23x_00037.rom 에 포함된 elara 용 v1.3 firmware.
+  * 일반적인 상황에서 firmware 를 업데이트 할 때, lpu23x_00037.rom 를 사용.
+  * A/S 등 기타 상황에서 강제로 firmware 를 업데이트 할 때, lpu237_3.25.bin ,lpu237_5.25.bin, lpu238_1.3.bin, himalia_2.6.bin 또는 elara_1.3.bin 를 사용.
 * Update program
   * lpu230.exe(Mapper v1.49.0.4 이상 사용). [Installer](https://github.com/elpusk/public.lpu237.software)
   * 업데이트 방법은 Mapper 설치 후, 포함된 Mapper 사용설명서 참고. 
+  * mapper 오류로 현재 himalia 를 elara 로 강제 업데이트 하면, 업데이트 완료 후, 아래와 같은 경고 발생. 그냥 무시하고, Common tab 에서 interface 를 강제 설정 후, "Apply"  하면 됨.(곧 patch 예정)  
+  ![mapper_v1.49.0.4_error](./img/mapper_v1.49.0.4_error.jpg)
+
 * 변경 내역
-  - himalia 에서 USB key 입력 간 지연 시간 최소한으로 변경.(callisto, ganymede, europa 만큼 빠르게)
+  - MH1902T 마이컴 용, lpu238(elara) 추가
 
 ## lpu230_update
 
@@ -103,7 +118,7 @@ himalia 만 USB key latency 를 줄이기 위해 업데이트.
     ![01_select_rom.jpg](./img/01_select_rom.jpg)
     4. lpu238_x.rom 파일 선택.
     ![02_select_lpu238.jpg](./img/02_select_lpu238.jpg)
-    5. "Selects firmware" dialog box 에서 "europa" 선택.
+    5. "Selects firmware" dialog box 에서 현재 장비가 "ganymede" 면 "europa" 선택. 현재 장비가 "himalia" 면 "elara" 선택
     ![03_select_europa.jpg](./img/03_select_europa.jpg)
     6. "Notice" message boxdialog box 에서 "Yes".
     ![04_warning.jpg](./img/04_warning.jpg)
@@ -126,7 +141,7 @@ himalia 만 USB key latency 를 줄이기 위해 업데이트.
     ![01_select_rom.jpg](./img/01_select_rom.jpg)
     4. lpu237_x.rom 파일 선택.
     ![12_select_lpu237.jpg](./img/12_select_lpu237.jpg)
-    5. "Selects firmware" dialog box 에서 "ganymede" 선택.
+    5. "Selects firmware" dialog box 에서  현재 장비가 "europa" 면 "ganymede" 선택. 현재 장비가 "elara" 면 "himalia" 선택 
     ![13_select_ganymede.jpg](./img/13_select_ganymede.jpg)
     6. "Notice" message boxdialog box 에서 "Yes".
     ![04_warning.jpg](./img/04_warning.jpg)

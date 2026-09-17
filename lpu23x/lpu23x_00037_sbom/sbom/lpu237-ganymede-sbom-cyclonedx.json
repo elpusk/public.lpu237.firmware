@@ -1,0 +1,59 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.7",
+  "serialNumber": "urn:uuid:c5e25f5a-a80b-48e4-98c6-dd1765355a23",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-07-09T14:38:35+09:00",
+    "authors": [
+      { "name": "Elpusk.Co.,Ltd"}
+    ],
+    "component": {
+      "bom-ref": "lpu237-ganymede-5.25.0",
+      "type": "firmware",
+      "name": "lpu237-ganymede" ,
+      "version": "5.25.0",
+      "purl": "pkg:generic/lpu237-ganymede@5.25.0",
+      "hashes": [
+        { "alg": "SHA-256", "content": "86998C10E00A837C6090A7F93A1D26284A4BC8E3C0636BAF1AF18B00AA77515A" }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "libcr-c-10.3.1",
+      "name": "libcr-c",
+      "version": "10.3.1",
+      "supplier": { "name": "NXP Semiconductors" },
+      "description": "Code Red / RedLib reduced-footprint C standard library for Cortex-M",
+      "licenses": [
+        { "license": { "name": "NXP LPCXpresso/MCUXpresso EULA (RedLib)" } }
+      ],
+      "hashes": [
+        { "alg": "SHA-256", "content": "A9BBD21BD7D908301F5634E29B26E19312A93D5A1566AF67336D5080AC51B591" }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "libcr-eabihelpers-10.3.1",
+      "name": "libcr-eabihelpers",
+      "version": "10.3.1",
+      "supplier": { "name": "NXP Semiconductors" },
+      "description": "EABI helper routines (softfp, divmod and so on) for ARM Cortex-M",
+      "licenses": [
+        { "license": { "name": "NXP LPCXpresso/MCUXpresso EULA (RedLib)" } }
+      ],
+      "hashes": [
+        { "alg": "SHA-256", "content": "767B519569BED67FBD43F38DAC44DE0B5E549E27AB320FEC64127FB4F789ED39" }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "lpu237-ganymede-5.25.0",
+      "dependsOn": ["libcr-c-10.3.1", "libcr-eabihelpers-10.3.1"]
+    }
+  ]
+}

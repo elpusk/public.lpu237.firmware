@@ -1,0 +1,74 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "comment": "This SPDX document has been converted from CycloneDX format.",
+    "created": "2026-07-09T05:38:35Z",
+    "creators": [
+      "Person: Elpusk.Co.,Ltd ()"
+    ]
+  },
+  "name": "lpu237-ganymede-5.25.0",
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "http://spdx.org/spdxdocs/lpu237-ganymede-5.25.0-c5e25f5a-a80b-48e4-98c6-dd1765355a23",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-lpu237-ganymede",
+      "name": "lpu237-ganymede",
+      "versionInfo": "5.25.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "primaryPackagePurpose": "FIRMWARE"
+    },
+    {
+      "SPDXID": "SPDXRef-libcr-c-10.3.1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "A9BBD21BD7D908301F5634E29B26E19312A93D5A1566AF67336D5080AC51B591"
+        }
+      ],
+      "description": "Code Red / RedLib reduced-footprint C standard library for Cortex-M",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "name": "libcr-c",
+      "primaryPackagePurpose": "LIBRARY",
+      "supplier": "Person: NXP Semiconductors ()",
+      "versionInfo": "10.3.1"
+    },
+    {
+      "SPDXID": "SPDXRef-libcr-eabihelpers-10.3.1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "767B519569BED67FBD43F38DAC44DE0B5E549E27AB320FEC64127FB4F789ED39"
+        }
+      ],
+      "description": "EABI helper routines (softfp, divmod and so on) for ARM Cortex-M",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "name": "libcr-eabihelpers",
+      "primaryPackagePurpose": "LIBRARY",
+      "supplier": "Person: NXP Semiconductors ()",
+      "versionInfo": "10.3.1"
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-lpu237-ganymede"
+    },
+    {
+      "spdxElementId": "SPDXRef-lpu237-ganymede",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-libcr-c-10.3.1"
+    },
+    {
+      "spdxElementId": "SPDXRef-lpu237-ganymede",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-libcr-eabihelpers-10.3.1"
+    }
+  ]  
+
+}

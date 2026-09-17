@@ -1,21 +1,25 @@
-# lpu238 history(europa)
+# lpu238 history(europa, elara)
 
-## 2025.01.21 - release v1.3
+## 2026.09.18 - europa v1.3, elara v1.3
+- lpu23x_00037.rom file
+- MH1902T 마이컴용, lpu238(elara) 첫 release
+- 기존 LPC1343 용, lpu238(europa) 와 버전을 맞 추추기 위해 일부로 1.3 부터 시작 
+
+## 2025.01.21 - europa release v1.3
 - lpu23x_00035.rom file
 - STX, ETX, LRC 로만 구성된 카드 데이터는 정상에서 에러 처리로 변경.   
 
-## 2024.06.17 - release v1.2
+## 2024.06.17 - europa release v1.2
 - 안드로이드에서 usb vendor hid interface 사용시, driver 에서 polling 이 없어서, i-button, reset 되는 문제 수정. 최소화를 위해 ibutton start/stop command 추가.
 
-## 2023.10.11 - release v1.1
+## 2023.10.11 - europa release v1.1
 * i-button None Mode 에서, USB keyboard interface 면, i-button 전송범위 선택 가능 추가.
 * i-button None Mode 에서, Virtual COM interface 면, i-button 전송범위 선택 가능 추가.
 * i-button None Mode 에서, Real COM interface 면, i-button 전송범위 선택 가능 추가.
 * 선택 가능한 범위는 0~15(최소 한 개는 선택되야함).
 * Virtual COM interface에서 Real COM를 같이 연결한 상태에서, i-button 이 Addmit Polling 모드이면, 응답이 Real COM 쪽으로 가는 문제 수정. 
 
-
-## 2023.08.03 - release v1.0
+## 2023.08.03 - europa release v1.0
 * lpu237 ganymede 용 v5.21 기반으로 제작
 * flash 용량 부족으로 usb key board interface 삭제.
 * Virtual COM(usb CDC) interface 추가.
