@@ -58,9 +58,9 @@ MH1902T 마이컴 용, lpu238(elara) 추가를 위한 업데이트.
   * 일반적인 상황에서 firmware 를 업데이트 할 때, lpu23x_00037.rom 를 사용.
   * A/S 등 기타 상황에서 강제로 firmware 를 업데이트 할 때, lpu237_3.25.bin ,lpu237_5.25.bin, lpu238_1.3.bin, himalia_2.6.bin 또는 elara_1.3.bin 를 사용.
 * Update program
-  * lpu230.exe(Mapper v1.49.0.4 이상 사용). [Installer](https://github.com/elpusk/public.lpu237.software)
+  * lpu230.exe(Mapper v1.50.0.4 이상 사용). [Installer](https://github.com/elpusk/public.lpu237.software)
   * 업데이트 방법은 Mapper 설치 후, 포함된 Mapper 사용설명서 참고. 
-  * mapper 오류로 현재 himalia 를 elara 로 강제 업데이트 하면, 업데이트 완료 후, 아래와 같은 경고 발생. 그냥 무시하고, Common tab 에서 interface 를 강제 설정 후, "Apply"  하면 됨.(곧 patch 예정)  
+  * Mapper v1.49.0.4 에서는 오류로 himalia 를 elara 로 강제 업데이트 하면, 업데이트 완료 후, 아래와 같은 경고 발생. 그냥 무시하고, Common tab 에서 interface 를 강제 설정 후, "Apply"  하면 됨.(v1.50.0.4 에서 수정됨.)  
   ![mapper_v1.49.0.4_error](./img/mapper_v1.49.0.4_error.jpg)
 
 * 변경 내역
