@@ -1,0 +1,355 @@
+<HTML><HEAD>
+	<META http-equiv="X-UA-Compatible" content="IE=edge" />
+	<META charset="UTF-8" />
+	<STYLE type='text/css'>
+		BODY { background-color: #DFDFDF; }
+		.dm_display
+		{
+		    color: Navy;
+		    font-family: monospace;
+		    background-color: White;
+		    border-width: 3px;
+		    border-style: outset;
+		}
+
+		#suite-output
+		{
+		    background-color: #FFFFDD;
+		    border: ridge 3px #FFFFDD;
+		    border-collapse: collapse;
+		    padding: 0;
+		    margin: 0;
+		    empty-cells: hide
+		}
+
+		#test-header
+		{
+		    font-weight: bold;
+		    font-size: large;
+		    border-top: ridge 2px #FFFFDD;
+		    border-bottom: ridge 2px #FFFFDD;
+		    padding: 0;
+		    margin: 0;
+		}
+
+		.test-pass, .test-fail
+		{
+		    float: right;
+		    border-left: ridge 2px #FFFDD;
+		    min-width: 6em;
+		}
+
+		.test-pass { background-color: #00FF00; }
+		.test-fail { background-color: #FF8888; }
+
+		.test-details
+		{
+		    clear: both;
+		    font-family: monospace;
+		    padding: 0;
+		    margin: 0;
+		    empty-cells: hide;
+		}
+
+		.label
+		{
+		    float: left;
+		    width: 6em;
+		}
+
+		.content
+		{
+		    white-space: pre-wrap;
+		    margin-left: 7em;
+		}
+
+		.err_log, .warn_log
+		{
+		    color: Red;
+		}
+
+		.err_log { font-weight: bold; }
+
+		.unexpected_log
+		{
+		    color: Red;
+		    background-color: Yellow;
+		    font-weight: bold;
+		    font-style: italic;
+		}
+	</STYLE>
+	<TITLE>HID Tests - 2026-10-01 12-11-24</TITLE>
+	<META name='Test-Version' content='GuiCV - 5.1.2.0' />
+	<META name='Test-Version' content='BaseUtilities - 5.0.2.0' />
+	<META name='Test-Version' content='GuiHelper - 5.1.2.0' />
+	<META name='Test-Version' content='ComplianceUtilities - 5.0.2.0' />
+	<META name='Test-Version' content='TestSuiteParser - 5.1.2.0' />
+	<META name='Suite-Name' content='HID Tests.cvtests' />
+	<META name='Test-Version' content='xhci_DevIOCTL - 3.0.0.0' />
+	<META name='Test-Version' content='xhci_TestServices - 3.0.0.0' />
+	<META name='Test-Version' content='USBUtilities - 3.0.0.0' />
+	<META name='Test-Version' content='xhci_CVServices - 3.0.0.0' />
+	<META name='Test-Version' content='HidParser - 3.4.1.0' />
+	<META name='Test-Version' content='xhci_HID - 3.4.1.0' />
+	<META name='Host-Controller' content='VID=8086,PID=51ED' />
+	<META name='Device-Under-Test' content='VID=134B, PID=0206' />
+	<META name='Device-Speed' content='Full Speed' />
+	<META name='Topology' content='XHCI HC -- DUT' />
+	<META name='Test-Pass' content='HID Class WhichSpecCompliant Test [Stopping Test HID Class WhichSpecCompliant Test:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Test-Pass' content='HID Class Descriptor Test (Configuration Index 0) - configured [Stopping Test HID Class Descriptor Test (Configuration Index 0) - configured:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Test-Pass' content='HID Class Protocol Test (Configuration Index 0) [Stopping Test HID Class Protocol Test (Configuration Index 0):
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Test-Pass' content='HID Class GET/SET Idle Test (Configuration Index 0) [Stopping Test HID Class GET/SET Idle Test (Configuration Index 0):
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Test-Pass' content='HID Class Report Descriptor Test (Configuration Index 0) [Stopping Test HID Class Report Descriptor Test (Configuration Index 0):
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Suite-Result' content='PASS' />
+	<META name='Log-Name' content='HID Tests - 2026-10-01 12-11-24.html' />
+	<META name='Test-Count' content='5' />
+</HEAD>
+<BODY><DIV id='suite-summary'>
+	<DIV><STRONG>APPLICATION</STRONG>: USB 3 Gen X Command Verifier<BR></DIV>
+	<DIV><STRONG>APPLICATION USER INTERFACE</STRONG>: GUI<BR></DIV>
+	<DIV><STRONG>TEST SUITE</STRONG>: HID Tests.cvtests<BR></DIV>
+	<DIV><STRONG>OPERATING SYSTEM</STRONG>: Windows 10 - 64-bit (version 10.0.19045)<BR></DIV>
+	<DIV><STRONG>HOST ARCHITECTURE</STRONG>: x64<BR></DIV>
+	<DIV><STRONG>WORKSTATION</STRONG>: DESKTOP-7TAT6PL<BR></DIV>
+	<DIV><STRONG>DATE</STRONG>: Thursday, October 01, 2026<BR></DIV>
+	<DIV><STRONG>TIME</STRONG>: 12:11:45 PM<BR></DIV>
+	<DIV><STRONG>DURATION</STRONG>: 21 seconds.
+<BR></DIV>
+	<DIV><STRONG>OPERATOR</STRONG>: tester<BR></DIV>
+	<DIV><STRONG>NUMBER OF TESTS</STRONG>: 5<BR></DIV>
+	<DIV><STRONG>LOG NAME</STRONG>: HID Tests - 2026-10-01 12-11-24<BR></DIV>
+	<DIV><STRONG>RESULT</STRONG>: passed<BR></DIV>
+<HR>
+</DIV>
+<BR><BR>
+<DIV id='suite-output'>
+<DIV id='test-header'>Startup</DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Calling test suite: HID Tests.
+</DIV></DIV>
+<DIV style='color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Log Level: Normal
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Windows 10 - 64-bit (version 10.0.19045)
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Host Architecture: x64
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Qt version: 6.8.3
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>VIF version supported: 3.38
+</DIV></DIV>
+<DIV style='color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>GuiCV ver 5.1.2.0
+</DIV></DIV>
+<DIV style='color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>BaseUtilities ver 5.0.2.0
+</DIV></DIV>
+<DIV style='color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>GuiHelper ver 5.1.2.0
+</DIV></DIV>
+<DIV style='color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>ComplianceUtilities ver 5.0.2.0
+</DIV></DIV>
+<DIV style='color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>TestSuiteParser ver 5.1.2.0
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'>Initialize Test Suite</DIV>
+<DIV class='test-details'>
+<DIV style='color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>xhci_DevIOCTL ver 3.0.0.0
+</DIV></DIV>
+<DIV style='color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>xhci_TestServices ver 3.0.0.0
+</DIV></DIV>
+<DIV style='color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>USBUtilities ver 3.0.0.0
+</DIV></DIV>
+<DIV style='color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>xhci_CVServices ver 3.0.0.0
+</DIV></DIV>
+<DIV style='color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>HidParser ver 3.4.1.0
+</DIV></DIV>
+<DIV style='color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>xhci_HID ver 3.4.1.0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>XHCISpecVersion: 1.20.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Compliance driver version: 1.1.0.0
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 00, 127)'><DIV class='label'>INFO</DIV><DIV class='content'>Host 1 selected: xHCI Host:  VID=0x8086, PID=0x51ED (PCI „¤ 0, ¥X 20, 0¥ 0)
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>User selection from list: &quot;FS  Device (HID) addr=6:   VID=134B, PID=0206&quot;
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 00, 127)'><DIV class='label'>INFO</DIV><DIV class='content'>Please select HID Device to test
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>HID Device Under Test is operating at Full Speed.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Topology: XHCI HC -- DUT
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'>Get Number Of Configurations</DIV>
+<DIV class='test-details'>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>USB Version number of device:  2.00
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Number of configurations: 1.
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'>Get Number Of Other Speed Configurations</DIV>
+<DIV class='test-details'>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>USB Version number of device:  2.00
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Number of Other Speed configurations: 0.
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_8'>HID Class WhichSpecCompliant Test</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:11:42
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>USB Version number of device:  2.00
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface 0x0 Alternate Setting 0x0 is draft 4 Compliant
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface 0x1 Alternate Setting 0x0 is draft 4 Compliant
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:11:42
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test HID Class WhichSpecCompliant Test:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_10'>HID Class Descriptor Test (Configuration Index 0) - configured</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:11:42
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Testing HID descriptor for Interface 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>HID descriptor total length : 0x9
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>HID descriptor type : 0x21
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>HID specification version : 0x100
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>CountryCode : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Number of other descriptors present : 0x1
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>HID report descriptor length : 0x3F
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Testing HID descriptor for Interface 0x1
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>HID descriptor total length : 0x9
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>HID descriptor type : 0x21
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>HID specification version : 0x100
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>CountryCode : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Number of other descriptors present : 0x1
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>HID report descriptor length : 0x2B
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:11:42
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test HID Class Descriptor Test (Configuration Index 0) - configured:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_12'>HID Class Protocol Test (Configuration Index 0)</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:11:42
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Starting GET/SET protocol tests for interface : 0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>SetProtocol(Report) request passed
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>GetProtocol request passed
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>SetProtocol(Boot) request passed
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>GetProtocol request passed
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>SetProtocol(Report) request passed
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>GetProtocol request passed
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Starting GET/SET protocol tests for interface : 1
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>GET/SET protocol request is optional. Skipping tests
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:11:42
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test HID Class Protocol Test (Configuration Index 0):
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_14'>HID Class GET/SET Idle Test (Configuration Index 0)</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:11:42
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>No report IDs found in report descriptor for Interface : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>GET/SETIdle test for report ID 0. Setting Idle rate to : 0x7F
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>No report IDs found in report descriptor for Interface : 0x1
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>GET/SETIdle test for report ID 0. Setting Idle rate to : 0x7F
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:11:42
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test HID Class GET/SET Idle Test (Configuration Index 0):
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_16'>HID Class Report Descriptor Test (Configuration Index 0)</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:11:42
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Report descriptor length: 63
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Item count in report descriptor: 32
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Report descriptor length: 43
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Item count in report descriptor: 21
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:11:42
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test HID Class Report Descriptor Test (Configuration Index 0):
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'>Test Suite Cleanup</DIV>
+<DIV class='test-details'>
+</DIV>
+<DIV id='test-header'>Summary</DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>TEST SUITE SUMMARY:
+    [ Fails (0); Aborts (0); Warnings (0) ]
+</DIV></DIV>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>TEST RESULTS:
+    [ Passed (5); Failed (0) ]
+</DIV></DIV>
+</DIV>
+</DIV>
+</BODY></HTML>

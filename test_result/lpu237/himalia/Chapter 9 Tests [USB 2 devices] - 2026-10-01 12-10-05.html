@@ -1,0 +1,1403 @@
+<HTML><HEAD>
+	<META http-equiv="X-UA-Compatible" content="IE=edge" />
+	<META charset="UTF-8" />
+	<STYLE type='text/css'>
+		BODY { background-color: #DFDFDF; }
+		.dm_display
+		{
+		    color: Navy;
+		    font-family: monospace;
+		    background-color: White;
+		    border-width: 3px;
+		    border-style: outset;
+		}
+
+		#suite-output
+		{
+		    background-color: #FFFFDD;
+		    border: ridge 3px #FFFFDD;
+		    border-collapse: collapse;
+		    padding: 0;
+		    margin: 0;
+		    empty-cells: hide
+		}
+
+		#test-header
+		{
+		    font-weight: bold;
+		    font-size: large;
+		    border-top: ridge 2px #FFFFDD;
+		    border-bottom: ridge 2px #FFFFDD;
+		    padding: 0;
+		    margin: 0;
+		}
+
+		.test-pass, .test-fail
+		{
+		    float: right;
+		    border-left: ridge 2px #FFFDD;
+		    min-width: 6em;
+		}
+
+		.test-pass { background-color: #00FF00; }
+		.test-fail { background-color: #FF8888; }
+
+		.test-details
+		{
+		    clear: both;
+		    font-family: monospace;
+		    padding: 0;
+		    margin: 0;
+		    empty-cells: hide;
+		}
+
+		.label
+		{
+		    float: left;
+		    width: 6em;
+		}
+
+		.content
+		{
+		    white-space: pre-wrap;
+		    margin-left: 7em;
+		}
+
+		.err_log, .warn_log
+		{
+		    color: Red;
+		}
+
+		.err_log { font-weight: bold; }
+
+		.unexpected_log
+		{
+		    color: Red;
+		    background-color: Yellow;
+		    font-weight: bold;
+		    font-style: italic;
+		}
+	</STYLE>
+	<TITLE>Chapter 9 Tests [USB 2 devices] - 2026-10-01 12-10-05</TITLE>
+	<META name='Test-Version' content='GuiCV - 5.1.2.0' />
+	<META name='Test-Version' content='BaseUtilities - 5.0.2.0' />
+	<META name='Test-Version' content='GuiHelper - 5.1.2.0' />
+	<META name='Test-Version' content='ComplianceUtilities - 5.0.2.0' />
+	<META name='Test-Version' content='TestSuiteParser - 5.1.2.0' />
+	<META name='Suite-Name' content='Chapter 9 Tests [USB 2 devices].cvtests' />
+	<META name='Test-Version' content='xhci_DevIOCTL - 3.0.0.0' />
+	<META name='Test-Version' content='xhci_TestServices - 3.0.0.0' />
+	<META name='Test-Version' content='USBUtilities - 3.0.0.0' />
+	<META name='Test-Version' content='xhci_CVServices - 3.0.0.0' />
+	<META name='Test-Version' content='xhci_USB2_CVServices - 3.0.0.0' />
+	<META name='Test-Version' content='xhci_USB2_Chapter9 - 3.4.1.0' />
+	<META name='Host-Controller' content='VID=8086,PID=51ED' />
+	<META name='Device-Under-Test' content='VID=134B, PID=0206' />
+	<META name='Device-Speed' content='Full Speed' />
+	<META name='Topology' content='XHCI HC -- DUT' />
+	<META name='Test-Pass' content='TD 9.1 - Device Descriptor Test (Configuration Index 0) - default [Stopping Test TD 9.1 - Device Descriptor Test (Configuration Index 0) - default:
+     Number of: Fails (0); Aborts (0); Warnings (2)
+
+]' />
+	<META name='Test-Pass' content='TD 9.2 - Configuration Descriptor Test (Configuration Index 0) - default [Stopping Test TD 9.2 - Configuration Descriptor Test (Configuration Index 0) - default:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Test-Pass' content='TD 9.3 Interface Association Descriptor Test (Config 0) [Stopping Test TD 9.3 Interface Association Descriptor Test (Config 0):
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Test-Pass' content='TD 9.4 - Interface Descriptor Test (Configuration Index 0) - default [Stopping Test TD 9.4 - Interface Descriptor Test (Configuration Index 0) - default:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Test-Pass' content='TD 9.5 - Endpoint Descriptor Test (Configuration Index 0) - default [Stopping Test TD 9.5 - Endpoint Descriptor Test (Configuration Index 0) - default:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Test-Pass' content='TD 9.7 - BOS Descriptor Test - Device State Default [Stopping Test TD 9.7 - BOS Descriptor Test - Device State Default:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Test-Pass' content='TD 9.30 Configuration Summary Descriptor Test - Device State Default [Stopping Test TD 9.30 Configuration Summary Descriptor Test - Device State Default:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Test-Pass' content='TD 9.1 - Device Descriptor Test (Configuration Index 0) - addressed [Stopping Test TD 9.1 - Device Descriptor Test (Configuration Index 0) - addressed:
+     Number of: Fails (0); Aborts (0); Warnings (2)
+
+]' />
+	<META name='Test-Pass' content='TD 9.2 - Configuration Descriptor Test (Configuration Index 0) - addressed [Stopping Test TD 9.2 - Configuration Descriptor Test (Configuration Index 0) - addressed:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Test-Pass' content='TD 9.3 Interface Association Descriptor Test (Config 0) [Stopping Test TD 9.3 Interface Association Descriptor Test (Config 0):
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Test-Pass' content='TD 9.4 - Interface Descriptor Test (Configuration Index 0) - addressed [Stopping Test TD 9.4 - Interface Descriptor Test (Configuration Index 0) - addressed:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Test-Pass' content='TD 9.5 - Endpoint Descriptor Test (Configuration Index 0) - addressed [Stopping Test TD 9.5 - Endpoint Descriptor Test (Configuration Index 0) - addressed:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Test-Pass' content='TD 9.7 - BOS Descriptor Test - Device State Addressed [Stopping Test TD 9.7 - BOS Descriptor Test - Device State Addressed:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Test-Pass' content='TD 9.30 Configuration Summary Descriptor Test - Device State Addressed [Stopping Test TD 9.30 Configuration Summary Descriptor Test - Device State Addressed:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Test-Pass' content='TD 9.1 - Device Descriptor Test (Configuration Index 0) - configured [Stopping Test TD 9.1 - Device Descriptor Test (Configuration Index 0) - configured:
+     Number of: Fails (0); Aborts (0); Warnings (2)
+
+]' />
+	<META name='Test-Pass' content='TD 9.2 - Configuration Descriptor Test (Configuration Index 0) - configured [Stopping Test TD 9.2 - Configuration Descriptor Test (Configuration Index 0) - configured:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Test-Pass' content='TD 9.3 Interface Association Descriptor Test (Config 0) [Stopping Test TD 9.3 Interface Association Descriptor Test (Config 0):
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Test-Pass' content='TD 9.4 - Interface Descriptor Test (Configuration Index 0) - configured [Stopping Test TD 9.4 - Interface Descriptor Test (Configuration Index 0) - configured:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Test-Pass' content='TD 9.5 - Endpoint Descriptor Test (Configuration Index 0) - configured [Stopping Test TD 9.5 - Endpoint Descriptor Test (Configuration Index 0) - configured:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Test-Pass' content='TD 9.7 - BOS Descriptor Test (Configuration Index 0) - Device State Configured [Stopping Test TD 9.7 - BOS Descriptor Test (Configuration Index 0) - Device State Configured:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Test-Pass' content='TD 9.9 - Halt Endpoint Test (Configuration Index 0) [Stopping Test TD 9.9 - Halt Endpoint Test (Configuration Index 0):
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Test-Pass' content='TD 9.13 - SetConfiguration Test (Configuration Index 0) [Stopping Test TD 9.13 - SetConfiguration Test (Configuration Index 0):
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Test-Pass' content='TD 9.30 Configuration Summary Descriptor Test (Configuration Index 0x00) - Device State Configured [Stopping Test TD 9.30 Configuration Summary Descriptor Test (Configuration Index 0x00) - Device State Configured:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Test-Pass' content='TD 9.14 - Suspend/Resume Test (Configuration Index 0) [Stopping Test TD 9.14 - Suspend/Resume Test (Configuration Index 0):
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Test-Pass' content='TD 9.12 - Remote Wakeup Test (Configuration Index 0) - Enabled: [Stopping Test TD 9.12 - Remote Wakeup Test (Configuration Index 0) - Enabled::
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Test-Pass' content='TD 9.12 - Remote Wakeup Test (Configuration Index 0) - Disabled: [Stopping Test TD 9.12 - Remote Wakeup Test (Configuration Index 0) - Disabled::
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Test-Pass' content='TD 9.21 - L1Suspend/Resume Test (Configuration Index 0) [Stopping Test TD 9.21 - L1Suspend/Resume Test (Configuration Index 0):
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Test-Pass' content='TD 9.16 - Enumeration Test(repeat 150 times) [Stopping Test TD 9.16 - Enumeration Test(repeat 150 times):
+     Number of: Fails (0); Aborts (0); Warnings (0)
+
+]' />
+	<META name='Suite-Result' content='PASS' />
+	<META name='Log-Name' content='Chapter 9 Tests [USB 2 devices] - 2026-10-01 12-10-05.html' />
+	<META name='Test-Count' content='28' />
+</HEAD>
+<BODY><DIV id='suite-summary'>
+	<DIV><STRONG>APPLICATION</STRONG>: USB 3 Gen X Command Verifier<BR></DIV>
+	<DIV><STRONG>APPLICATION USER INTERFACE</STRONG>: GUI<BR></DIV>
+	<DIV><STRONG>TEST SUITE</STRONG>: Chapter 9 Tests [USB 2 devices].cvtests<BR></DIV>
+	<DIV><STRONG>OPERATING SYSTEM</STRONG>: Windows 10 - 64-bit (version 10.0.19045)<BR></DIV>
+	<DIV><STRONG>HOST ARCHITECTURE</STRONG>: x64<BR></DIV>
+	<DIV><STRONG>WORKSTATION</STRONG>: DESKTOP-7TAT6PL<BR></DIV>
+	<DIV><STRONG>DATE</STRONG>: Thursday, October 01, 2026<BR></DIV>
+	<DIV><STRONG>TIME</STRONG>: 12:11:14 PM<BR></DIV>
+	<DIV><STRONG>DURATION</STRONG>: 68 seconds (1 minute, 8 seconds).
+<BR></DIV>
+	<DIV><STRONG>OPERATOR</STRONG>: tester<BR></DIV>
+	<DIV><STRONG>NUMBER OF TESTS</STRONG>: 28<BR></DIV>
+	<DIV><STRONG>LOG NAME</STRONG>: Chapter 9 Tests [USB 2 devices] - 2026-10-01 12-10-05<BR></DIV>
+	<DIV><STRONG>RESULT</STRONG>: passed<BR></DIV>
+<HR>
+</DIV>
+<BR><BR>
+<DIV id='suite-output'>
+<DIV id='test-header'>Startup</DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Calling test suite: Chapter 9 Tests [USB 2 devices].
+</DIV></DIV>
+<DIV style='color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Log Level: Normal
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Windows 10 - 64-bit (version 10.0.19045)
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Host Architecture: x64
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Qt version: 6.8.3
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>VIF version supported: 3.38
+</DIV></DIV>
+<DIV style='color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>GuiCV ver 5.1.2.0
+</DIV></DIV>
+<DIV style='color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>BaseUtilities ver 5.0.2.0
+</DIV></DIV>
+<DIV style='color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>GuiHelper ver 5.1.2.0
+</DIV></DIV>
+<DIV style='color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>ComplianceUtilities ver 5.0.2.0
+</DIV></DIV>
+<DIV style='color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>TestSuiteParser ver 5.1.2.0
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'>Initialize Test Suite</DIV>
+<DIV class='test-details'>
+<DIV style='color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>xhci_DevIOCTL ver 3.0.0.0
+</DIV></DIV>
+<DIV style='color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>xhci_TestServices ver 3.0.0.0
+</DIV></DIV>
+<DIV style='color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>USBUtilities ver 3.0.0.0
+</DIV></DIV>
+<DIV style='color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>xhci_CVServices ver 3.0.0.0
+</DIV></DIV>
+<DIV style='color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>xhci_USB2_CVServices ver 3.0.0.0
+</DIV></DIV>
+<DIV style='color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>xhci_USB2_Chapter9 ver 3.4.1.0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>XHCISpecVersion: 1.20.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Compliance driver version: 1.1.0.0
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 00, 127)'><DIV class='label'>INFO</DIV><DIV class='content'>Host 1 selected: xHCI Host:  VID=0x8086, PID=0x51ED (PCI „¤ 0, ¥X 20, 0¥ 0)
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>User selection from list: &quot;FS  Device (HID) addr=6:   VID=134B, PID=0206&quot;
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 00, 127)'><DIV class='label'>INFO</DIV><DIV class='content'>Please select USB 2 Device to test
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>USB 2 Device Under Test is operating at Full Speed.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Topology: XHCI HC -- DUT
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'>Get Number Of Configurations</DIV>
+<DIV class='test-details'>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>USB Version number of device:  2.00
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Number of configurations: 1.
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'>Get Number Of Configurations - Other Speed</DIV>
+<DIV class='test-details'>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>USB Version number of device:  2.00
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Number of Other Speed configurations: 0.
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_8'>TD 9.1 - Device Descriptor Test (Configuration Index 0) - default</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device descriptor length : 0x12
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device descriptor type : 0x1
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Major version : 0x2
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Minor version : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Each interface specifies its own device class type
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device sub class : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device protocol : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device MaxPacketSize0 : 0x40
+</DIV></DIV>
+<DIV class='warn_log'><DIV class='label'>WARNING</DIV><DIV class='content'>Couldn't find vendor name file: usbif.json
+Open the link https://cms.usb.org/usb/api/usbif.json in a browser. Once the page has fully loaded, copy full content of the page into the text file usbif.json, and place it in the directory &quot;\\?\C:\Users\tester\Documents\USB-IF Test Suite\Downloaded USB-IF Vendor File&quot;
+</DIV></DIV>
+<DIV class='warn_log'><DIV class='label'>WARNING</DIV><DIV class='content'>Failed to get vendor information for VendorID : 0x134B
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device ProductID : 0x206
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device BCD : 0x100
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Checking iManufacturer String Descriptor: index = 0x01.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>String Descriptor : &quot;ELPUSK&quot;. (ENGLISH_US)
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Checking iProduct String Descriptor: index = 0x02.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>String Descriptor : &quot;EMR3XXX MS-READER K/B HID&quot;. (ENGLISH_US)
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Checking iSerialNumber String Descriptor: index = 0x00.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>The device omits this string descriptor.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Number of configurations device supports : 0x1
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test TD 9.1 - Device Descriptor Test (Configuration Index 0) - default:
+     Number of: Fails (0); Aborts (0); Warnings (2)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_10'>TD 9.2 - Configuration Descriptor Test (Configuration Index 0) - default</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Validating configuration descriptor 0...
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor contains descriptor of type : 0x4 (Interface Descriptor)
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor contains descriptor of type : 0x21 (HID Descriptor)
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor contains descriptor of type : 0x5 (Endpoint Descriptor)
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor contains descriptor of type : 0x4 (Interface Descriptor)
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor contains descriptor of type : 0x21 (HID Descriptor)
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor contains descriptor of type : 0x5 (Endpoint Descriptor)
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor contains descriptor of type : 0x5 (Endpoint Descriptor)
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Number of interface descriptors found 0x2
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Number of alternate interface descriptors found : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Number of endpoint descriptors found : 0x3
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor length : 0x9
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor type : 0x2
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor TotalLength : 0x42
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor NumInterfaces : 0x2
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor ConfigurationValue: 0x1
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Checking iConfiguration String Descriptor: index = 0x00.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>The device omits this string descriptor.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor bmAttributes : 0x80
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device does not support remote wake up
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>MaxPower = 50  PowerMultiplier = 2
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Maximum power device requires : 100mA
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device is BUS POWERED
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test TD 9.2 - Configuration Descriptor Test (Configuration Index 0) - default:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_12'>TD 9.3 Interface Association Descriptor Test (Config 0)</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>
+Device has 2 functions, of which 0 have an Interface Association descriptor.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Function #1 does not have an Interface Association Descriptor.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Function #2 does not have an Interface Association Descriptor.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>This device does not contain an Interface Association Descriptor.
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test TD 9.3 Interface Association Descriptor Test (Config 0):
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_14'>TD 9.4 - Interface Descriptor Test (Configuration Index 0) - default</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Bandwidth check passed
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Testing Interface number : 0x0 Alternate setting : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor length : 0x9
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bDescriptorType : 0x4
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bAlternateSetting : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bNumEndPoints: 0x1
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bInterfaceClass reserved for assignment by the USB-IF : 0x03.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface class code indicates [HID] Interface.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface sub class : 1 &lt;not defined&gt;
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface protocol : 1 &lt;not defined&gt;
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bInterfaceSubClass : 0x01.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bInterfaceProtocol assigned by the USB-IF : 0x01.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor iInterface : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Testing Interface number : 0x1 Alternate setting : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor length : 0x9
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bDescriptorType : 0x4
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bAlternateSetting : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bNumEndPoints: 0x2
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bInterfaceClass reserved for assignment by the USB-IF : 0x03.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface class code indicates [HID] Interface.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface sub class : 0 &lt;not defined&gt;
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface protocol : 0 &lt;not defined&gt;
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bInterfaceSubClass : 0x00.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device does not use a class-specific protocol on this interface.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor iInterface : 0x0
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test TD 9.4 - Interface Descriptor Test (Configuration Index 0) - default:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_16'>TD 9.5 - Endpoint Descriptor Test (Configuration Index 0) - default</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>
+Testing Interface number : 0x0 Alternate setting : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor length : 0x7
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor type : 0x5
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint Type : Interrupt, Number : 0x1, Direction : IN
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor bmAttributes : 0x3
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor raw MaxPacketSize : 0x8
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor interval : 0x2
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>
+Testing Interface number : 0x1 Alternate setting : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor length : 0x7
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor type : 0x5
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint Type : Interrupt, Number : 0x2, Direction : IN
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor bmAttributes : 0x3
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor raw MaxPacketSize : 0x40
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor interval : 0x2
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor length : 0x7
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor type : 0x5
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint Type : Interrupt, Number : 0x3, Direction : OUT
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor bmAttributes : 0x3
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor raw MaxPacketSize : 0x40
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor interval : 0x2
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test TD 9.5 - Endpoint Descriptor Test (Configuration Index 0) - default:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_18'>TD 9.7 - BOS Descriptor Test - Device State Default</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration Index 0x00 has a Configuration Value of 1
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>USB Version supported:  2.00
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Devices with bcdUSB &lt;= 0x200 must respond to a GET_DESCRIPTOR(BOS) request with a Request Error.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device Under Test responded with a Request Error to a GET_DESCRIPTOR(BOS) request. (as expected)
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test TD 9.7 - BOS Descriptor Test - Device State Default:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_20'>TD 9.30 Configuration Summary Descriptor Test - Device State Default</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Initialized the device to the Default state.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Retrieved Device Descriptor.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device Under Test supports USB Version 0x2.0x00.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration Summary Descriptors are not supported in this version.  (Requires BOS descriptor)
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test TD 9.30 Configuration Summary Descriptor Test - Device State Default:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_22'>TD 9.1 - Device Descriptor Test (Configuration Index 0) - addressed</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device descriptor length : 0x12
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device descriptor type : 0x1
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Major version : 0x2
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Minor version : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Each interface specifies its own device class type
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device sub class : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device protocol : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device MaxPacketSize0 : 0x40
+</DIV></DIV>
+<DIV class='warn_log'><DIV class='label'>WARNING</DIV><DIV class='content'>Couldn't find vendor name file: usbif.json
+Open the link https://cms.usb.org/usb/api/usbif.json in a browser. Once the page has fully loaded, copy full content of the page into the text file usbif.json, and place it in the directory &quot;\\?\C:\Users\tester\Documents\USB-IF Test Suite\Downloaded USB-IF Vendor File&quot;
+</DIV></DIV>
+<DIV class='warn_log'><DIV class='label'>WARNING</DIV><DIV class='content'>Failed to get vendor information for VendorID : 0x134B
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device ProductID : 0x206
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device BCD : 0x100
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Checking iManufacturer String Descriptor: index = 0x01.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>String Descriptor : &quot;ELPUSK&quot;. (ENGLISH_US)
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Checking iProduct String Descriptor: index = 0x02.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>String Descriptor : &quot;EMR3XXX MS-READER K/B HID&quot;. (ENGLISH_US)
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Checking iSerialNumber String Descriptor: index = 0x00.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>The device omits this string descriptor.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Number of configurations device supports : 0x1
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test TD 9.1 - Device Descriptor Test (Configuration Index 0) - addressed:
+     Number of: Fails (0); Aborts (0); Warnings (2)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_24'>TD 9.2 - Configuration Descriptor Test (Configuration Index 0) - addressed</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Validating configuration descriptor 0...
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor contains descriptor of type : 0x4 (Interface Descriptor)
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor contains descriptor of type : 0x21 (HID Descriptor)
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor contains descriptor of type : 0x5 (Endpoint Descriptor)
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor contains descriptor of type : 0x4 (Interface Descriptor)
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor contains descriptor of type : 0x21 (HID Descriptor)
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor contains descriptor of type : 0x5 (Endpoint Descriptor)
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor contains descriptor of type : 0x5 (Endpoint Descriptor)
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Number of interface descriptors found 0x2
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Number of alternate interface descriptors found : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Number of endpoint descriptors found : 0x3
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor length : 0x9
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor type : 0x2
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor TotalLength : 0x42
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor NumInterfaces : 0x2
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor ConfigurationValue: 0x1
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Checking iConfiguration String Descriptor: index = 0x00.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>The device omits this string descriptor.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor bmAttributes : 0x80
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device does not support remote wake up
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>MaxPower = 50  PowerMultiplier = 2
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Maximum power device requires : 100mA
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device is BUS POWERED
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test TD 9.2 - Configuration Descriptor Test (Configuration Index 0) - addressed:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_26'>TD 9.3 Interface Association Descriptor Test (Config 0)</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>
+Device has 2 functions, of which 0 have an Interface Association descriptor.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Function #1 does not have an Interface Association Descriptor.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Function #2 does not have an Interface Association Descriptor.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>This device does not contain an Interface Association Descriptor.
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test TD 9.3 Interface Association Descriptor Test (Config 0):
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_28'>TD 9.4 - Interface Descriptor Test (Configuration Index 0) - addressed</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Bandwidth check passed
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Testing Interface number : 0x0 Alternate setting : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor length : 0x9
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bDescriptorType : 0x4
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bAlternateSetting : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bNumEndPoints: 0x1
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bInterfaceClass reserved for assignment by the USB-IF : 0x03.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface class code indicates [HID] Interface.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface sub class : 1 &lt;not defined&gt;
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface protocol : 1 &lt;not defined&gt;
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bInterfaceSubClass : 0x01.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bInterfaceProtocol assigned by the USB-IF : 0x01.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor iInterface : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Testing Interface number : 0x1 Alternate setting : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor length : 0x9
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bDescriptorType : 0x4
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bAlternateSetting : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bNumEndPoints: 0x2
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bInterfaceClass reserved for assignment by the USB-IF : 0x03.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface class code indicates [HID] Interface.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface sub class : 0 &lt;not defined&gt;
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface protocol : 0 &lt;not defined&gt;
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bInterfaceSubClass : 0x00.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device does not use a class-specific protocol on this interface.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor iInterface : 0x0
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test TD 9.4 - Interface Descriptor Test (Configuration Index 0) - addressed:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_30'>TD 9.5 - Endpoint Descriptor Test (Configuration Index 0) - addressed</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>
+Testing Interface number : 0x0 Alternate setting : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor length : 0x7
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor type : 0x5
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint Type : Interrupt, Number : 0x1, Direction : IN
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor bmAttributes : 0x3
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor raw MaxPacketSize : 0x8
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor interval : 0x2
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>
+Testing Interface number : 0x1 Alternate setting : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor length : 0x7
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor type : 0x5
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint Type : Interrupt, Number : 0x2, Direction : IN
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor bmAttributes : 0x3
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor raw MaxPacketSize : 0x40
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor interval : 0x2
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor length : 0x7
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor type : 0x5
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint Type : Interrupt, Number : 0x3, Direction : OUT
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor bmAttributes : 0x3
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor raw MaxPacketSize : 0x40
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor interval : 0x2
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test TD 9.5 - Endpoint Descriptor Test (Configuration Index 0) - addressed:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_32'>TD 9.7 - BOS Descriptor Test - Device State Addressed</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration Index 0x00 has a Configuration Value of 1
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>USB Version supported:  2.00
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Devices with bcdUSB &lt;= 0x200 must respond to a GET_DESCRIPTOR(BOS) request with a Request Error.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device Under Test responded with a Request Error to a GET_DESCRIPTOR(BOS) request. (as expected)
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test TD 9.7 - BOS Descriptor Test - Device State Addressed:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_34'>TD 9.30 Configuration Summary Descriptor Test - Device State Addressed</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Initialized the device to the Addressed state.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Retrieved Device Descriptor.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device Under Test supports USB Version 0x2.0x00.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration Summary Descriptors are not supported in this version.  (Requires BOS descriptor)
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test TD 9.30 Configuration Summary Descriptor Test - Device State Addressed:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_36'>TD 9.1 - Device Descriptor Test (Configuration Index 0) - configured</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device descriptor length : 0x12
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device descriptor type : 0x1
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Major version : 0x2
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Minor version : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Each interface specifies its own device class type
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device sub class : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device protocol : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device MaxPacketSize0 : 0x40
+</DIV></DIV>
+<DIV class='warn_log'><DIV class='label'>WARNING</DIV><DIV class='content'>Couldn't find vendor name file: usbif.json
+Open the link https://cms.usb.org/usb/api/usbif.json in a browser. Once the page has fully loaded, copy full content of the page into the text file usbif.json, and place it in the directory &quot;\\?\C:\Users\tester\Documents\USB-IF Test Suite\Downloaded USB-IF Vendor File&quot;
+</DIV></DIV>
+<DIV class='warn_log'><DIV class='label'>WARNING</DIV><DIV class='content'>Failed to get vendor information for VendorID : 0x134B
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device ProductID : 0x206
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device BCD : 0x100
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Checking iManufacturer String Descriptor: index = 0x01.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>String Descriptor : &quot;ELPUSK&quot;. (ENGLISH_US)
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Checking iProduct String Descriptor: index = 0x02.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>String Descriptor : &quot;EMR3XXX MS-READER K/B HID&quot;. (ENGLISH_US)
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Checking iSerialNumber String Descriptor: index = 0x00.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>The device omits this string descriptor.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Number of configurations device supports : 0x1
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test TD 9.1 - Device Descriptor Test (Configuration Index 0) - configured:
+     Number of: Fails (0); Aborts (0); Warnings (2)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_38'>TD 9.2 - Configuration Descriptor Test (Configuration Index 0) - configured</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Validating configuration descriptor 0...
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor contains descriptor of type : 0x4 (Interface Descriptor)
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor contains descriptor of type : 0x21 (HID Descriptor)
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor contains descriptor of type : 0x5 (Endpoint Descriptor)
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor contains descriptor of type : 0x4 (Interface Descriptor)
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor contains descriptor of type : 0x21 (HID Descriptor)
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor contains descriptor of type : 0x5 (Endpoint Descriptor)
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor contains descriptor of type : 0x5 (Endpoint Descriptor)
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Number of interface descriptors found 0x2
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Number of alternate interface descriptors found : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Number of endpoint descriptors found : 0x3
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor length : 0x9
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor type : 0x2
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor TotalLength : 0x42
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor NumInterfaces : 0x2
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor ConfigurationValue: 0x1
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Checking iConfiguration String Descriptor: index = 0x00.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>The device omits this string descriptor.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration descriptor bmAttributes : 0x80
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device does not support remote wake up
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>MaxPower = 50  PowerMultiplier = 2
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Maximum power device requires : 100mA
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device is BUS POWERED
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device is currently BUS POWERED
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Currently remote wakeup is DISABLED
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test TD 9.2 - Configuration Descriptor Test (Configuration Index 0) - configured:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_40'>TD 9.3 Interface Association Descriptor Test (Config 0)</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>
+Device has 2 functions, of which 0 have an Interface Association descriptor.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Function #1 does not have an Interface Association Descriptor.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Function #2 does not have an Interface Association Descriptor.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>This device does not contain an Interface Association Descriptor.
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test TD 9.3 Interface Association Descriptor Test (Config 0):
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_42'>TD 9.4 - Interface Descriptor Test (Configuration Index 0) - configured</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Bandwidth check passed
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Testing Interface number : 0x0 Alternate setting : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor length : 0x9
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bDescriptorType : 0x4
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bAlternateSetting : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bNumEndPoints: 0x1
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bInterfaceClass reserved for assignment by the USB-IF : 0x03.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface class code indicates [HID] Interface.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface sub class : 1 &lt;not defined&gt;
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface protocol : 1 &lt;not defined&gt;
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bInterfaceSubClass : 0x01.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bInterfaceProtocol assigned by the USB-IF : 0x01.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor iInterface : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Testing Interface number : 0x1 Alternate setting : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor length : 0x9
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bDescriptorType : 0x4
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bAlternateSetting : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bNumEndPoints: 0x2
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bInterfaceClass reserved for assignment by the USB-IF : 0x03.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface class code indicates [HID] Interface.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface sub class : 0 &lt;not defined&gt;
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface protocol : 0 &lt;not defined&gt;
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor bInterfaceSubClass : 0x00.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device does not use a class-specific protocol on this interface.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Interface descriptor iInterface : 0x0
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test TD 9.4 - Interface Descriptor Test (Configuration Index 0) - configured:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_44'>TD 9.5 - Endpoint Descriptor Test (Configuration Index 0) - configured</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>
+Testing Interface number : 0x0 Alternate setting : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor length : 0x7
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor type : 0x5
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint Type : Interrupt, Number : 0x1, Direction : IN
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor bmAttributes : 0x3
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor raw MaxPacketSize : 0x8
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor interval : 0x2
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>
+Testing Interface number : 0x1 Alternate setting : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor length : 0x7
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor type : 0x5
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint Type : Interrupt, Number : 0x2, Direction : IN
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor bmAttributes : 0x3
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor raw MaxPacketSize : 0x40
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor interval : 0x2
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor length : 0x7
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor type : 0x5
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint Type : Interrupt, Number : 0x3, Direction : OUT
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor bmAttributes : 0x3
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor raw MaxPacketSize : 0x40
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint descriptor interval : 0x2
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test TD 9.5 - Endpoint Descriptor Test (Configuration Index 0) - configured:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_46'>TD 9.7 - BOS Descriptor Test (Configuration Index 0) - Device State Configured</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration Index 0x00 has a Configuration Value of 1
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Initializing the device to the Configured state with Configuration Value 1
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>USB Version supported:  2.00
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Devices with bcdUSB &lt;= 0x200 must respond to a GET_DESCRIPTOR(BOS) request with a Request Error.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device Under Test responded with a Request Error to a GET_DESCRIPTOR(BOS) request. (as expected)
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test TD 9.7 - BOS Descriptor Test (Configuration Index 0) - Device State Configured:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_48'>TD 9.9 - Halt Endpoint Test (Configuration Index 0)</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Testing Interface number : 0x0 Alternate setting : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Testing EndPoint type : Interrupt, Address : 0x81
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint is currently not halted for endpoint 0x81
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Setting feature endpoint halt for endpoint 0x81
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint is halted for endpoint 0x81
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Clearing feature endpoint halt for endpoint 0x81
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint is no longer halted for endpoint 0x81
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Testing Interface number : 0x1 Alternate setting : 0x0
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Testing EndPoint type : Interrupt, Address : 0x82
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint is currently not halted for endpoint 0x82
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Setting feature endpoint halt for endpoint 0x82
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint is halted for endpoint 0x82
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Clearing feature endpoint halt for endpoint 0x82
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint is no longer halted for endpoint 0x82
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Testing EndPoint type : Interrupt, Address : 0x3
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint is currently not halted for endpoint 0x03
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Setting feature endpoint halt for endpoint 0x03
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint is halted for endpoint 0x03
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Clearing feature endpoint halt for endpoint 0x03
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Endpoint is no longer halted for endpoint 0x03
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test TD 9.9 - Halt Endpoint Test (Configuration Index 0):
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_50'>TD 9.13 - SetConfiguration Test (Configuration Index 0)</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>SetConfiguration with configuration value : 0x1
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Unconfigured the device
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>SetConfiguration with configuration value : 0x1
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test TD 9.13 - SetConfiguration Test (Configuration Index 0):
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_52'>TD 9.30 Configuration Summary Descriptor Test (Configuration Index 0x00) - Device State Configured</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration Index 0x00 has a Configuration Value of 1.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Initialized the device to the Configured state with Configuration Value 1.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Retrieved Device Descriptor.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device Under Test supports USB Version 0x2.0x00.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Configuration Summary Descriptors are not supported in this version.  (Requires BOS descriptor)
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test TD 9.30 Configuration Summary Descriptor Test (Configuration Index 0x00) - Device State Configured:
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_54'>TD 9.14 - Suspend/Resume Test (Configuration Index 0)</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:10:20
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Suspended the parent port of the Device Under Test.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Resumed the parent port of the Device Under Test.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Got device descriptor of Device Under Test
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:10:21
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test TD 9.14 - Suspend/Resume Test (Configuration Index 0):
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_56'>TD 9.12 - Remote Wakeup Test (Configuration Index 0) - Enabled:</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:10:21
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>The device does not support remote wakeup
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:10:21
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test TD 9.12 - Remote Wakeup Test (Configuration Index 0) - Enabled::
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_58'>TD 9.12 - Remote Wakeup Test (Configuration Index 0) - Disabled:</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:10:21
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>The device does not support remote wakeup
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:10:21
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test TD 9.12 - Remote Wakeup Test (Configuration Index 0) - Disabled::
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_60'>TD 9.21 - L1Suspend/Resume Test (Configuration Index 0)</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:10:21
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Checking Device Under Test for LPM L1 Compatibility...
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>USB version of device is 2.00.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>DUT is NOT compatible with LPM.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>LPM is NOT required for DUT
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>LPM is only supported in USB version 2.01 and above.
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:10:21
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  &lt; 1 second
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test TD 9.21 - L1Suspend/Resume Test (Configuration Index 0):
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'><A  name='anchor_62'>TD 9.16 - Enumeration Test(repeat 150 times)</A><DIV class='test-pass'>Passed</DIV></DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 191)'><DIV class='label'>INFO</DIV><DIV class='content'>Start time : Oct 01, 2026 - 12:10:21
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device speed is Full.
+</DIV></DIV>
+<DIV style='font-weight: bold'><DIV class='label'>INFO</DIV><DIV class='content'>Beginning enumeration test with 150 enumerations.  This may take several minutes to complete.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Enumerated 150 iterations.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Re-enumerating the world...
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Finding device: host port=9, routeString=0.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>  Looking at Hub Array:
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>  Looking at device Array:
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>    Found device!
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device tree re-enumerated.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Recovered Device Under Test after device tree re-enumeration.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Device speed of Device Under Test: Full Speed.
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>
+Stop time : Oct 01, 2026 - 12:11:07
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Duration:  45 seconds.
+</DIV></DIV>
+<DIV style='font-weight: bold;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>Stopping Test TD 9.16 - Enumeration Test(repeat 150 times):
+     Number of: Fails (0); Aborts (0); Warnings (0)
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'>Display Other Tests To Run</DIV>
+<DIV class='test-details'>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>If the Device Under Test supports an Other USB2 Speed, please run Chapter 9 tests for that speed.
+</DIV></DIV>
+<DIV><DIV class='label'>INFO</DIV><DIV class='content'>Please run the following class test suites on this device.  Run them at all supported speeds:
+</DIV></DIV>
+<DIV style='font-weight: bold'><DIV class='label'>INFO</DIV><DIV class='content'> * Connector Type
+</DIV></DIV>
+<DIV style='font-weight: bold'><DIV class='label'>INFO</DIV><DIV class='content'> * HID
+</DIV></DIV>
+</DIV>
+<DIV id='test-header'>Test Suite Cleanup</DIV>
+<DIV class='test-details'>
+</DIV>
+<DIV id='test-header'>Summary</DIV>
+<DIV class='test-details'>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>TEST SUITE SUMMARY:
+    [ Fails (0); Aborts (0); Warnings (6) ]
+</DIV></DIV>
+<DIV style='font-weight: bold;font-style:italic;color:rgb(00, 127, 00)'><DIV class='label'>INFO</DIV><DIV class='content'>TEST RESULTS:
+    [ Passed (28); Failed (0) ]
+</DIV></DIV>
+</DIV>
+</DIV>
+</BODY></HTML>
