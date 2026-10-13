@@ -1,5 +1,11 @@
 # lpu238 history(europa, elara)
 
+## 2026.10.13 - europa v1.3, elara v1.4
+- lpu23x_00038.rom file(europa v1.3 변경 무)
+- elara 에서 i-button group number 가 기존 0x01 인 것은 잘 인식하나, 0x2D 인 것은 100% 인식 못해, i-button reading timming 수정.
+- elara 에서 virtual COM, i-button Addimat mode 모드에서 RS232 와 다르게 나오는 오류 확인되서 수정
+- elara 에서 virtual COM, i-button addimit polling 모드가 이상 동작해서 수정.
+
 ## 2026.09.18 - europa v1.3, elara v1.3
 - lpu23x_00037.rom file
 - MH1902T 마이컴용, lpu238(elara) 첫 release

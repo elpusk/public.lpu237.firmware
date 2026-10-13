@@ -2,21 +2,21 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:f3439832-cf34-4c46-a3ed-14c33069a126",
+  "serialNumber": "urn:uuid:babd7439-4d87-4989-9681-dcc761d75255",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-07-23T12:23:00+09:00",
+    "timestamp": "2026-10-13T12:56:27+09:00",
     "authors": [
       { "name": "Elpusk.Co.,Ltd"}
     ],
     "component": {
-      "bom-ref": "lpu237-himalia-2.6.0",
+      "bom-ref": "lpu238-elara-1.4.0",
       "type": "firmware",
-      "name": "lpu237-himalia" ,
-      "version": "2.6.0",
-      "purl": "pkg:generic/lpu237-himalia@2.6.0",
+      "name": "lpu238-elara" ,
+      "version": "1.4.0",
+      "purl": "pkg:generic/lpu238-elara@1.4.0",
       "hashes": [
-        { "alg": "SHA-256", "content": "60A44223E9B06B480441806C82AA4EA67076011657A949CCF22AEA1A7DEB056C" }
+        { "alg": "SHA-256", "content": "AFB2E22DE67EB1474C38C10BEB7AC5C80147D5F1265CDBEA3A097B57915C9914" }
       ]
     }
   },
@@ -80,7 +80,7 @@
   ],
   "dependencies": [
     {
-      "ref": "lpu237-himalia-2.6.0",
+      "ref": "lpu238-elara-1.4.0",
       "dependsOn": ["libc-5.4.1", "arm-cortexM3l-math-1.4.1", "arm-cortexM3b-math-1.4.1", "libmh1902t-msr-gnu-4.7.3"]
     }
   ]

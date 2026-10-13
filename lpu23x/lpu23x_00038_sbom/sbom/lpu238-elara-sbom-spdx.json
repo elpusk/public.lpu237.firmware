@@ -3,19 +3,19 @@
   "spdxVersion": "SPDX-2.3",
   "creationInfo": {
     "comment": "This SPDX document has been converted from CycloneDX format.",
-    "created": "2026-07-13T02:01:10Z",
+    "created": "2026-10-13T03:56:27Z",
     "creators": [
       "Person: Elpusk.Co.,Ltd ()"
     ]
   },
-  "name": "lpu237-himalia-2.6.0",
+  "name": "lpu238-elara-1.4.0",
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "http://spdx.org/spdxdocs/lpu237-himalia-2.6.0-f3439832-cf34-4c46-a3ed-14c33069a126",
+  "documentNamespace": "http://spdx.org/spdxdocs/lpu238-elara-1.4.0-babd7439-4d87-4989-9681-dcc761d75255",
   "packages": [
     {
-      "SPDXID": "SPDXRef-lpu237-himalia",
-      "name": "lpu237-himalia",
-      "versionInfo": "2.6.0",
+      "SPDXID": "SPDXRef-lpu238-elara",
+      "name": "lpu238-elara",
+      "versionInfo": "1.4.0",
       "downloadLocation": "NOASSERTION",
       "filesAnalyzed": false,
       "primaryPackagePurpose": "FIRMWARE"
@@ -30,11 +30,11 @@
       ],
       "description": "Arm GNU C standard library for Cortex-M",
       "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
       "name": "libc",
       "primaryPackagePurpose": "LIBRARY",
       "supplier": "Person: Arm Limited ()",
-      "versionInfo": "5.4.1"
+      "versionInfo": "5.4.1",
+      "filesAnalyzed": false
     },
     {
       "SPDXID": "SPDXRef-arm-cortexM3l-math-1.4.1",
@@ -46,11 +46,11 @@
       ],
       "description": "Arm GNU Cortex-M3 CMSIS-DSP little-endian software library",
       "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
       "name": "arm-cortexM3l-math",
       "primaryPackagePurpose": "LIBRARY",
       "supplier": "Person: Arm Limited ()",
-      "versionInfo": "1.4.1"
+      "versionInfo": "1.4.1",
+      "filesAnalyzed": false
     },
     {
       "SPDXID": "SPDXRef-arm-cortexM3b-math-1.4.1",
@@ -62,11 +62,11 @@
       ],
       "description": "Arm GNU Cortex-M3 CMSIS-DSP big-endian software library",
       "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
       "name": "arm-cortexM3b-math",
       "primaryPackagePurpose": "LIBRARY",
       "supplier": "Person: Arm Limited ()",
-      "versionInfo": "1.4.1"
+      "versionInfo": "1.4.1",
+      "filesAnalyzed": false
     },
     {
       "SPDXID": "SPDXRef-libmh1902t-msr-gnu-4.7.3",
@@ -78,36 +78,36 @@
       ],
       "description": "Megahunt GNU GCC MH1902T MSR software library",
       "downloadLocation": "NOASSERTION",
-      "filesAnalyzed": false,
       "name": "libmh1902t-msr-gnu",
       "primaryPackagePurpose": "LIBRARY",
       "supplier": "Person: Megahunt Technologies ()",
-      "versionInfo": "4.7.3"
+      "versionInfo": "4.7.3",
+      "filesAnalyzed": false
     }
   ],
   "relationships": [
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
       "relationshipType": "DESCRIBES",
-      "relatedSpdxElement": "SPDXRef-lpu237-himalia"
+      "relatedSpdxElement": "SPDXRef-lpu238-elara"
     },
     {
-      "spdxElementId": "SPDXRef-lpu237-himalia",
+      "spdxElementId": "SPDXRef-lpu238-elara",
       "relationshipType": "CONTAINS",
       "relatedSpdxElement": "SPDXRef-libc-5.4.1"
     },
     {
-      "spdxElementId": "SPDXRef-lpu237-himalia",
+      "spdxElementId": "SPDXRef-lpu238-elara",
       "relationshipType": "CONTAINS",
       "relatedSpdxElement": "SPDXRef-arm-cortexM3l-math-1.4.1"
     },
     {
-      "spdxElementId": "SPDXRef-lpu237-himalia",
+      "spdxElementId": "SPDXRef-lpu238-elara",
       "relationshipType": "CONTAINS",
       "relatedSpdxElement": "SPDXRef-arm-cortexM3b-math-1.4.1"
     },
     {
-      "spdxElementId": "SPDXRef-lpu237-himalia",
+      "spdxElementId": "SPDXRef-lpu238-elara",
       "relationshipType": "CONTAINS",
       "relatedSpdxElement": "SPDXRef-libmh1902t-msr-gnu-4.7.3"
     }

@@ -3,23 +3,23 @@
   "spdxVersion": "SPDX-2.3",
   "creationInfo": {
     "comment": "This SPDX document has been converted from CycloneDX format.",
-    "created": "2026-09-17T09:44:00Z",
+    "created": "2026-10-07T23:24:29Z",
     "creators": [
       "Person: Elpusk.Co.,Ltd ()"
     ]
   },
-  "name": "lpu238-elara-1.3.0",
+  "name": "lpu237-himalia-2.7.0",
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "http://spdx.org/spdxdocs/lpu238-elara-1.3.0-a760836e-0ed5-442e-b7e8-35abb406ad9b",
+  "documentNamespace": "http://spdx.org/spdxdocs/lpu237-himalia-2.7.0-ce7a6158-8f41-44fe-934b-0a686d4278b4",
   "packages": [
     {
-      "SPDXID": "SPDXRef-lpu238-elara",
-      "name": "lpu238-elara",
-      "versionInfo": "1.3.0",
+      "SPDXID": "SPDXRef-lpu237-himalia",
+      "name": "lpu237-himalia",
+      "versionInfo": "2.7.0",
       "downloadLocation": "NOASSERTION",
       "filesAnalyzed": false,
       "primaryPackagePurpose": "FIRMWARE"
-    },
+    },    
     {
       "SPDXID": "SPDXRef-libc-5.4.1",
       "checksums": [
@@ -89,25 +89,25 @@
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
       "relationshipType": "DESCRIBES",
-      "relatedSpdxElement": "SPDXRef-lpu238-elara"
+      "relatedSpdxElement": "SPDXRef-lpu237-himalia"
     },
     {
-      "spdxElementId": "SPDXRef-lpu238-elara",
+      "spdxElementId": "SPDXRef-lpu237-himalia",
       "relationshipType": "CONTAINS",
       "relatedSpdxElement": "SPDXRef-libc-5.4.1"
     },
     {
-      "spdxElementId": "SPDXRef-lpu238-elara",
+      "spdxElementId": "SPDXRef-lpu237-himalia",
       "relationshipType": "CONTAINS",
       "relatedSpdxElement": "SPDXRef-arm-cortexM3l-math-1.4.1"
     },
     {
-      "spdxElementId": "SPDXRef-lpu238-elara",
+      "spdxElementId": "SPDXRef-lpu237-himalia",
       "relationshipType": "CONTAINS",
       "relatedSpdxElement": "SPDXRef-arm-cortexM3b-math-1.4.1"
     },
     {
-      "spdxElementId": "SPDXRef-lpu238-elara",
+      "spdxElementId": "SPDXRef-lpu237-himalia",
       "relationshipType": "CONTAINS",
       "relatedSpdxElement": "SPDXRef-libmh1902t-msr-gnu-4.7.3"
     }

@@ -39,24 +39,24 @@
 
 ## lpu237 - [history](./doc/history_lpu237.md) 및 lpu238 - [history](./doc/history_lpu238.md)
 
-## 2026.09.18
+## 2026.10.13
 
-MH1902T 마이컴 용, lpu238(elara) 추가를 위한 업데이트.
+MH1902T 마이컴 용, lpu237(himalia), lpu238(elara) 업데이트.
 
 * 버전
-  * callisto v3.25 ,ganymede v5.25, europa v1.3, himalia v2.6, elara v1.3
+  * callisto v3.25 ,ganymede v5.25, europa v1.3, himalia v2.7, elara v1.4
 * 배포 파일
-  * [SBOM 포함된 lpu23x_00037_sbom.zip](./lpu23x/lpu23x_00037_sbom.zip)
+  * [SBOM 포함된 lpu23x_00038_sbom.zip](./lpu23x/lpu23x_00038_sbom.zip)
 * 배포 파일 내용
-  * lpu23x_00037.rom - callisto 용 v3.25 , ganymede 용 v5.25, europa 용 v1.3, himalia 용 v2.6, elara 용 v1.3 이 포함된 ROM file.
+  * lpu23x_00038.rom - callisto 용 v3.25 , ganymede 용 v5.25, europa 용 v1.3, himalia 용 v2.7, elara 용 v1.4 이 포함된 ROM file.
   * Update 가능 조건 - target device 의 버전이 ROM 파일에 포함된 firmware 버전 보다 낮거나 같음.
-  * lpu237_3.25.bin - lpu23x_00037.rom 에 포함된 callisto 용 v3.25 firmware.
-  * lpu237_5.25.bin - lpu23x_00037.rom 에 포함된 ganymede 용 v5.25 firmware.
-  * lpu238_1.3.bin - lpu23x_00037.rom 에 포함된 europa 용 v1.3 firmware.
-  * himalia_2.6.bin - lpu23x_00037.rom 에 포함된 himalia 용 v2.6 firmware.
-  * elara_1.3.bin - lpu23x_00037.rom 에 포함된 elara 용 v1.3 firmware.
-  * 일반적인 상황에서 firmware 를 업데이트 할 때, lpu23x_00037.rom 를 사용.
-  * A/S 등 기타 상황에서 강제로 firmware 를 업데이트 할 때, lpu237_3.25.bin ,lpu237_5.25.bin, lpu238_1.3.bin, himalia_2.6.bin 또는 elara_1.3.bin 를 사용.
+  * lpu237_3.25.bin - lpu23x_00038.rom 에 포함된 callisto 용 v3.25 firmware.
+  * lpu237_5.25.bin - lpu23x_00038.rom 에 포함된 ganymede 용 v5.25 firmware.
+  * lpu238_1.3.bin - lpu23x_00038.rom 에 포함된 europa 용 v1.3 firmware.
+  * himalia_2.7.bin - lpu23x_00038.rom 에 포함된 himalia 용 v2.7 firmware.
+  * elara_1.4.bin - lpu23x_00038.rom 에 포함된 elara 용 v1.4 firmware.
+  * 일반적인 상황에서 firmware 를 업데이트 할 때, lpu23x_00038.rom 를 사용.
+  * A/S 등 기타 상황에서 강제로 firmware 를 업데이트 할 때, lpu237_3.25.bin ,lpu237_5.25.bin, lpu238_1.3.bin, himalia_2.7.bin 또는 elara_1.4.bin 를 사용.
 * Update program
   * lpu230.exe(Mapper v1.50.0.4 이상 사용). [Installer](https://github.com/elpusk/public.lpu237.software)
   * 업데이트 방법은 Mapper 설치 후, 포함된 Mapper 사용설명서 참고. 
@@ -64,7 +64,10 @@ MH1902T 마이컴 용, lpu238(elara) 추가를 위한 업데이트.
   ![mapper_v1.49.0.4_error](./img/mapper_v1.49.0.4_error.jpg)
 
 * 변경 내역
-  - MH1902T 마이컴 용, lpu238(elara) 추가
+  - MH1902T 마이컴 용, lpu237(himalia) 에서 i-button group number 가 기존 0x01 인 것은 잘 인식하나, 0x2D 인 것은 100% 인식 못해, i-button reading timming 수정.
+  - MH1902T 마이컴 용, lpu238(elara) 에서 i-button group number 가 기존 0x01 인 것은 잘 인식하나, 0x2D 인 것은 100% 인식 못해, i-button reading timming 수정.
+  - MH1902T 마이컴 용, lpu238(elara) 에서 virtual COM, i-button Addimat mode 모드에서 RS232 와 다르게 나오는 오류 확인되서 수정.
+  - MH1902T 마이컴 용, lpu238(elara) 에서  virtual COM, i-button addimit polling 모드가 이상 동작해서 수정.
 
 ## lpu230_update
 

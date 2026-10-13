@@ -1,6 +1,10 @@
 # lpu237 history( europa 는 [lpu238 history 참고](history_lpu238.md) )
 2023.08.04 부터 기존 history.pdf 문서 firmware 부분 업데이트는 중단 되고. 이 문서로 대체.
 
+## 2026.10.13 - callisto v3.25, ganymede v5.25, himalia version 2.7
+- lpu23x_00038.rom file
+- himalia 에서 i-button group number 가 기존 0x01 인 것은 잘 인식하나, 0x2D 인 것은 100% 인식 못해, i-button reading timming 수정.
+
 ## 2026.07.23 - callisto v3.25, ganymede v5.25, himalia version 2.6
 - lpu23x_00036.rom file
 - himalia 에서 USB key 입력 간 지연 시간을 callisto, ganymede, europa 만큼 줄임.
